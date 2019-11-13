@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AdP - Primeiros Passos</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+		
+  </head>
+  <body>
+    <script src="../script.js"></script>
+
+		<header style="background-image: url(/background/faerie_miscreant.jpg)">
+			
+				<nav class="navbar">
+
+  			<a class="home" href="../index.html">Academia de Planinautas</a>
+  			
+				<div class="dropdown">
+    			<button class="dropbtn" href="../primeiros_passos.html">Primeiros Passos 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="../primeiros_passos/terrenos.html">Terrenos</a>
+      			<a href="../primeiros_passos/criaturas.html">Criaturas</a>
+      			<a href="../primeiros_passos/turno.html">Turno</a>
+      			<a href="../primeiros_passos/combate.html">Combate</a>
+      			<a href="../primeiros_passos/feiticos.html">Feitiços</a>
+      			<a href="../primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
+    			</div>
+  			</div>
+				
+				<div class="dropdown">
+    			<button class="dropbtn" href="../explorando.html">Explorando 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="../explorando/zonas.html">Zonas</a>
+      			<a href="../explorando/pilha.html">Pilha</a>
+      			<a href="../explorando/permanentes.html">Permanentes</a>
+      			<a href="../explorando/encantamentos.html">Encantamentos</a>
+      			<a href="../explorando/planinautas.html">Planinautas</a>
+      			<a href="../explorando/artefatos.html">Artefatos</a>
+      			<a href="../explorando/habilidades.html">Habilidades</a>
+    			</div>
+				</div>
+
+				<div class="dropdown">
+    			<button class="dropbtn" href="../aprofundando.html">Aprofundando 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="../aprofundando/cores.html">Cores</a>
+      			<a href="../aprofundando/formatos.html">Formatos</a>
+      			<a href="../aprofundando/deckbuilding.html">Deckbuilding</a>
+    			</div>
+				</div>
+
+				<div class="dropdown">
+    			<button class="dropbtn" href="../estrategia.html">Estratégia 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="../estrategia/arquetipos.html">Arquétipos</a>
+      			<a href="../estrategia/interacoes_pilha.html">Interações na Pilha</a>
+      			<a href="../estrategia/vantagem.html">Vantagem de Cartas</a>
+      			<a href="../estrategia/tempo.html">Tempo</a>
+    			</div>
+				</div>
+				
+				<div class="dropdown">
+    			<button class="dropbtn">Mais 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="../mais/glossario.html">Glossário</a>
+      			<a href="../mais/imagens.html">Imagens</a>
+      			<a href="../mais/links.html">Links Externos</a>
+    			</div>
+  			</div> 
+
+			</nav>
+
+			<a class="section-container" href="#main">
+				<div>
+					<h1 class="section-title">Vantagem de Cartas</h1>
+				</div>
+			</a>
+		</header>
+
+
+			<main id="main">
+				<div id="sidebar">
+					<div id="side-content">
+						<img id="side-img" src="" alt="">
+						<p id="side-txt"></p>
+					</div>
+
+				</div>
+
+				<article>
+					<p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <span class="display" onclick="display(mana)">mana</span>.</p>
+					<p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
+					<p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <span class="display" onclick="display(virar)">virados</span> para gerar mana da cor correspondente.</p>
+					<p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
+					<ul>
+						<li> Branco: <span class="display" onclick="display(plains)">Planície</span></li>
+						<li> Azul: <span class="display" onclick="display(island)">Ilha</span></li>
+						<li> Preto: <span class="display" onclick="display(swamp)">Pântano</span></li>
+						<li> Vermelho: <span class="display" onclick="display(mountain)">Montanha</span></li>
+						<li> Verde: <span class="display" onclick="display(forest)">Floresta</span></li>
+					</ul>
+					<p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
+				</article>
+			</main>
+
+
+			<div id="bottom-bar">
+				<div class ="side" id="left-bottom">
+					<a class="bottom-link" href="../estrategia/interacoes_pilha.html">Anterior</a>
+				</div>
+				<div class="center">
+					<a class="bottom-link" href="../index.html">Home</a>
+				</div>
+				<div class="center">
+					<a class="bottom-link" href="../indice.html">Índice</a>
+				</div>
+				<div class ="side" id="right-bottom">
+					<a class="bottom-link" href="../estrategia/tempo.html">Próximo</a>
+				</div>
+			</div>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AdP - Primeiros Passos</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+		
+  </head>
+  <body>
+    <script src="../script.js"></script>
+
+		<header style="background-image: url(/background/blighted_fen.jpg)">
+			
+			<div class="navbar">
+  			<a class="home" href="index.html">Academia de Planinautas</a>
+				<div class="dropdown">
+    			<button class="dropbtn">Dropdown 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="#">Link 1</a>
+      			<a href="#">Link 2</a>
+      			<a href="#">Link 3</a>
+    			</div>
+  			</div>
+				
+				<div class="dropdown">
+    			<button class="dropbtn">Dropdown 
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="#">Link 1</a>
+      			<a href="#">Link 2</a>
+      			<a href="#">Link 3</a>
+    			</div>
+  			</div> 
+
+			</div>
+
+			<a class="section-container" href="#main">
+				<div>
+					<h1 class="section-title">Terrenos</h1>
+				</div>
+			</a>
+		</header>
+
+
+			<main id="main">
+				<div id="sidebar">
+					<div class="side-content" id="plains">
+						<img class="side-img" src="/display/plains.png" alt="">
+						<p class="side-text">Planície da Alpha, primeira edição de Magic: The Gathering.</p>
+					</div>
+					<div class="side-content" id="island">
+						<img class="side-img" src="/display/island.png" alt="">
+						<p class="side-text">Ilha da Alpha, primeira edição de Magic: The Gathering.</p>
+					</div>
+					<div class="side-content" id="swamp">
+						<img class="side-img" src="/display/swamp.png" alt="">
+						<p class="side-text">Pântano da Alpha, primeira edição de Magic: The Gathering.</p>
+					</div>
+					<div class="side-content" id="mountain">
+						<img class="side-img" src="/display/mountain.png" alt="">
+						<p class="side-text">Montanha da Alpha, primeira edição de Magic: The Gathering.</p>
+					</div>
+					<div class="side-content" id="forest">
+						<img class="side-img" src="/display/forest.png" alt="">
+						<p class="side-text">Floresta da Alpha, primeira edição de Magic: The Gathering.</p>
+					</div>
+					<div>
+						<div class="side-content side-text-only" id="mana">
+							<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>
+						</div>
+					</div>
+				</div>
+
+				<article>
+					<p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <span class="display" onclick="mana()">mana</span>.</p>
+					<p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
+					<p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <span class="display" onclick="">virados</span> para gerar mana da cor correspondente.</p>
+					<p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
+					<ul>
+						<li> Branco: <span class="display" onclick="plains()">Planície</span></li>
+						<li> Azul: <span class="display" onclick="island()">Ilha</span></li>
+						<li> Preto: <span class="display" onclick="swamp()">Pântano</span></li>
+						<li> Vermelho: <span class="display" onclick="mountain()">Montanha</span></li>
+						<li> Verde: <span class="display" onclick="forest()">Floresta</span></li>
+					</ul>
+					<p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
+				</article>
+			</main>
+			<div id="bottom-bar">
+				<div class ="side" id="left-bottom">
+					<a class="bottom-link" href="#">Anterior</a>
+				</div>
+				<div class="center">
+					<a class="bottom-link" href="/">Home</a>
+				</div>
+				<div class="center">
+					<a class="bottom-link" href="#">Índice</a>
+				</div>
+				<div class ="side" id="right-bottom">
+					<a class="bottom-link" href="#">Próximo</a>
+				</div>
+			</div>
+
+
+
+
+  </body>
+</html>
