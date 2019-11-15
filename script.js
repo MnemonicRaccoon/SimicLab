@@ -36,6 +36,7 @@ var virar = {
 };
 
 function display(x) {
+    document.getElementById("sidebar").display="block";
 	if (x.img === "none") {
 		document.getElementById("side-img").src = ("");
 		document.getElementById("side-txt").innerHTML = (x.txt);
