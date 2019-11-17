@@ -1,28 +1,28 @@
 // Terrenos
 var plains = {
     "title": "Planície",
-	"img": "/display/plains.png",
+	"img": "/SimicLab/display/plains.png",
 	"alt": "Planície da Alpha, primeira edição de Magic: The Gathering."
 };
 
 var island = {
     "title": "Ilha",
-	"img": "/display/island.png",
+	"img": "/SimicLab/display/island.png",
 	"alt": "Ilha da Alpha, primeira edição de Magic: The Gathering."
 };
 var swamp = {
     "title": "Pântano",
-	"img": "/display/swamp.png",
+	"img": "/SimicLab/display/swamp.png",
 	"alt": "Pântano da Alpha, primeira edição de Magic: The Gathering."
 };
 var mountain = {
     "title": "Montanha",
-	"img": "/display/mountain.png",
+	"img": "/SimicLab/display/mountain.png",
 	"alt": "Montanha da Alpha, primeira edição de Magic: The Gathering."
 };
 var forest = {
     "title": "Floresta",
-	"img": "/display/forest.png",
+	"img": "/SimicLab/display/forest.png",
 	"alt": "Floresta da Alpha, primeira edição de Magic: The Gathering."
 };
 
