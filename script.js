@@ -1,28 +1,28 @@
 // Terrenos
 var plains = {
     "title": "Planície",
-	"img": "/SimicLab/display/plains.png",
+	"img": "../display/plains.png",
 	"alt": "Planície da Alpha, primeira edição de Magic: The Gathering."
 };
 
 var island = {
     "title": "Ilha",
-	"img": "/SimicLab/display/island.png",
+	"img": "../display/island.png",
 	"alt": "Ilha da Alpha, primeira edição de Magic: The Gathering."
 };
 var swamp = {
     "title": "Pântano",
-	"img": "/SimicLab/display/swamp.png",
+	"img": "../display/swamp.png",
 	"alt": "Pântano da Alpha, primeira edição de Magic: The Gathering."
 };
 var mountain = {
     "title": "Montanha",
-	"img": "/SimicLab/display/mountain.png",
+	"img": "../display/mountain.png",
 	"alt": "Montanha da Alpha, primeira edição de Magic: The Gathering."
 };
 var forest = {
     "title": "Floresta",
-	"img": "/SimicLab/display/forest.png",
+	"img": "../display/forest.png",
 	"alt": "Floresta da Alpha, primeira edição de Magic: The Gathering."
 };
 
@@ -31,14 +31,12 @@ function display(x) {
     if ($(window).width()<=768) {
         $('#myModal').modal('show');
     };
-    document.getElementById("sidebar").display="block";
-	if (x.img === "none") {
-		document.getElementById("side-img").src = ("");
-		document.getElementById("side-txt").innerHTML = (x.txt);
-	} else	document.getElementById("side-img").src = (x.img);
-	document.getElementById("side-img").alt = (x.alt);
-	document.getElementById("modal-title").innerHTML = (x.title);
-    document.getElementById("modal-img").src = (x.img);   
+	$("#side-img").attr("src", "");
+	$("#modal-img").attr("src", "");
+	$("#side-img").attr("src", x.img);
+	$("#side-img").attr("alt", x.alt);
+	$("#modal-title").html(x.title);
+    $("#modal-img").attr("src", x.img);
 };
 
 

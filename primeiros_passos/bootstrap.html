@@ -20,22 +20,22 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <!-- My CSS -->
-        <link href="/SimicLab/style.css" rel="stylesheet" type="text/css" />
+        <link href="../style.css" rel="stylesheet" type="text/css" />
 
     </head>
 
     <body>
-        <script src="/SimicLab/script.js"></script>
+        <script src="../script.js"></script>
 
         <!------------ Background ------------>
 
-        <div class="jumbotron jubotron-fluid" style="background-image: url(/SimicLab/background/blighted_fen.jpg)">
+        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/blighted_fen.jpg)">
 
 
             <!---------------------- Navbar ---------------------->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
-                <a class="navbar-brand" href="/SimicLab/index.html">SimicLab</a>
+                <a class="navbar-brand" href="../index.html">SimicLab</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon">&#9776;</span>
@@ -48,11 +48,11 @@
                                 Primeiros Passos
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="/SimicLab/primeiros_passos/terrenos.html">Terrenos</a>
-                                <a class="dropdown-item" href="/SimicLab/primeiros_passos/criaturas.html">Criaturas</a>
-                                <a class="dropdown-item" href="/SimicLab/primeiros_passos/turno.html">Turno</a>
-                                <a class="dropdown-item" href="/SimicLab/primeiros_passos/feiticos.html">Feitiços</a>
-                                <a class="dropdown-item" href="/SimicLab/primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
+                                <a class="dropdown-item" href="./terrenos.html">Terrenos</a>
+                                <a class="dropdown-item" href="./criaturas.html">Criaturas</a>
+                                <a class="dropdown-item" href="./turno.html">Turno</a>
+                                <a class="dropdown-item" href="./feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="./instantaneas.html">Mágicas Instantâneas</a>
                             </div>
                         </li>
 
@@ -61,7 +61,12 @@
                                 Explorando
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="/SimicLab/explorando/zonas.html">Zonas</a>
+                                <a class="dropdown-item" href="../explorando/zonas.html">Zonas</a>
+                                <a class="dropdown-item" href="../explorando/encantamentos.html">Encantamentos</a>
+                                <a class="dropdown-item" href="../explorando/artefatos.html">Artefatos</a>
+                                <a class="dropdown-item" href="../explorando/planeswalkers.html">Planeswalkers</a>
+                                <a class="dropdown-item" href="../explorando/habilidades.html">Habilidades</a>
+                                <a class="dropdown-item" href="../explorando/pilha.html">Pilha</a>
                             </div>
                         </li>
 
@@ -70,7 +75,9 @@
                                 Aprofundando
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="/SimicLab/aprofundando/cores.html">Cores</a>
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Cores</a>
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Formatos</a>
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Deckbuilding</a>
                             </div>
                         </li>
 
@@ -79,7 +86,9 @@
                                 Estratégia
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="/SimicLab/estrategia/interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="../estrategia/interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="../estrategia/vantagem.html">Vantagem de Cartas</a>
+                                <a class="dropdown-item" href="../estrategia/tempo.html">Tempo</a>
                             </div>
                         </li>
 
@@ -88,7 +97,8 @@
                                 Mais
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="/SimicLab/mais/glossario.html">Glossário</a>
+                                <a class="dropdown-item" href="../mais/glossario.html">Glossário</a>
+                                <a class="dropdown-item" href="../mais/sobre.html">Sobre</a>
                             </div>
                         </li>
 
@@ -129,13 +139,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card">
-                        <img class="card-img-top" id="side-img" src="/SimicLab/display/card_back.jpg" alt="">
+                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
                         <div class="card-footer"><p id="side-txt"></p></div>
                     </div>
                 </div>
 
 
-                <!---------------------- Article ---------------------->
+                <!-------------------- Article -------------------->
 
                 <article class="col-md-8">
                     <p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Mana" data-content="<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>">mana</a>.</p>
@@ -169,7 +179,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/SimicLab/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="/display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>
@@ -182,16 +192,16 @@
         <nav class="container" id="bottom-bar">
             <div class="row">
                 <div class ="col-md-4 text-left bottom-btn" id="left-bottom">
-                    <a class="bottom-link" href="/SimicLab/primeiros_passos.html">Anterior</a>
+                    <a class="bottom-link" href="../primeiros_passos.html">Anterior</a>
                 </div>
                 <div class="col-sm text-center bottom-btn" id="home">
-                    <a class="bottom-link" href="/SimicLab/index.html">Home</a>
+                    <a class="bottom-link" href="../index.html">Home</a>
                 </div>
                 <div class="col-sm text-center bottom-btn" id="indice">
-                    <a class="bottom-link" href="/SimicLab/indice.html" >Índice</a>
+                    <a class="bottom-link" href="../indice.html" >Índice</a>
                 </div>
                 <div class ="col-md-4 text-right bottom-btn" id="right-bottom">
-                    <a class="bottom-link" href="/SimicLab/primeiros_passos/criaturas.html">Próximo</a>
+                    <a class="bottom-link" href="./criaturas.html">Próximo</a>
                 </div>
             </div>
         </nav>
