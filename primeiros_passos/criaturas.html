@@ -50,8 +50,8 @@
                             <div class="dropdown-menu">  
                                 <a class="dropdown-item" href="./terrenos.html">Terrenos</a>
                                 <a class="dropdown-item" href="./criaturas.html">Criaturas</a>
-                                <a class="dropdown-item" href="./turno.html">Turno</a>
                                 <a class="dropdown-item" href="./feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="./turno.html">Turno</a>
                                 <a class="dropdown-item" href="./instantaneas.html">Mágicas Instantâneas</a>
                             </div>
                         </li>
@@ -138,7 +138,7 @@
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
-                    <div class="card">
+                    <div class="card sticky-top">
                         <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
                         <div class="card-footer"><p id="side-txt"></p></div>
                     </div>
@@ -151,19 +151,16 @@
                     <h2>Anatomia</h2>
 					<p>O uso mais comum da mana gerada pelos terrenos é conjurar mágicas. Existem vários tipos de mágicas diferentes, e a primeira que vamos ver são as CRIATURAS.</p>
 					<div class="img_container">
-						<img src="/article_img/aguia_empirea.jpg" alt="" class="img_article">
+						<img src="../article_img/aguia_empirea.jpg" alt="Águia Empírea" class="img_article">
 					</div>
 					<p>Podemos identificar que a carta acima é uma criatura pelo texto logo abaixo da ilustração. O tipo da carta é criatura e, no caso, o subtipo é Ave Espírito.</p>
 					<p>No canto inferior direito temos o PODER e a RESISTÊNCIA da criatura. O poder indica a quantidade de dano que ela atribui no combate, e a resistência mostra a quantidade de dano necessária para matar ela.</p>
-					<p>Como vimos na lição anterior, cada mágica precisa de mana para ser conjurada. O CUSTO DE MANA está indicado no canto superior direito da carta. No custo de mana, podemos ter indicação de mana de cada uma das cinco cores ou de mana genérica (que pode ser pago com qualquer cor). A Águia Empírea precisa de uma mana branco, uma azul e uma genérica para ser conjurada. Nos exemplos abaixo, o custo de mana de Krenko é de uma vermelha e duas genéricas e do Gigantossauro é cinco verdes.</p>
-					<div class="article_grid">
-						<div class="img_container">
-							<img class="img_article" src="/article_img/krenko.jpg" alt="">
-						</div>
-						<div class="img_container">
-							<img class="img_article" src="/article_img/gigantossauro.jpg" alt="">
-						</div>
-					</div>
+					<p>Como vimos na lição anterior, cada mágica precisa de mana para ser conjurada. O CUSTO DE MANA está indicado no canto superior direito da carta. No custo de mana, podemos ter indicação de mana de cada uma das cinco cores ou de mana genérica (que pode ser pago com qualquer cor). A Águia Empírea precisa de uma mana branco, uma azul e uma genérica para ser conjurada. Nos exemplos abaixo, o custo de mana de <a class="display" href="javascript:void(0)" onclick="display(krenko)">Krenko, Chefão da Rua do Estanho</a> é de uma vermelha e duas genéricas e do <a class="display" href="javascript:void(0)" onclick="display(gigantossauro)">Gigantossauro</a> é cinco verdes.</p>
+                    <p>Abaixo da linha de tipo, temos um texto que indica as habilidades da carta. Vamos discutir melhor essas habilidades em uma próxima lição. O texto abaixo, em itálico, é o <i>flavor</i>. Ele não afeta a jogabilidade, mas nos dá vislumbres dos mundos de Magic.</p>
+                    <h2>Mana híbrida e custos X</h2>
+                    <p>A maioria das mágicas possue um custo de mana como o dos exemplo acima. Existem, no entanto, algumas excessões</p>
+                    <p>Custos de mana híbrido podem ser pago com uma de duas cores diferentes. É o caso da <a class="display" href="javascript:void(0)" onclick="display(gorgon)">Górgona Impiedosa</a>. Em seu custo, além da mana genérica, temos duas manas híbridas, que podem ser pagas com qualquer combinação de mana preta e verde (duas verdes, duas pretas ou uma de cada).</p>
+                    <p>Algumas cartas apresentam em seu custo de mana um X. Isso indica que, na hora de conjurar a mágica, seu controlador define um valor para X, que influenciará em algum efeito da carta. Por exemplo, ao conjurar a <a class="display" href="javascript:void(0)" onclick="display(krasis)">Krasis Hidroide</a>, seu controlador deve pagar uma mana azul, uma verde e mais X genéricas. Esse valor definirá a quantidade de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Marcador +1/+1" data-content="<p>Marcadores +1/+1 são fichas que são colocadas em criaturas por diversos efeitos e aumentam seu poder e resistência em 1.</p><p>Uma criatura 0/0 que entre no campo com 4 marcadores +1/+1 será uma 4/4.</p>">marcadores +1/+1</a> que terá, além de fazer com que o jogador compre cartas e ganhe vida.</p>
 					<h2>Atacando e Bloqueando</h2>
 					<p>Durante seu turno, você pode atacar criaturas que controla, exceto aquelas que estão com <a>enjoo de conjuração</a>. Para fazer isso, você declara quais criaturas vão atacar, e vira elas.</p>
 					<p>Depois de você declarar seus ataques, seu oponente declara os bloqueadores. Apenas criaturas desviradas podem bloquear.</p>

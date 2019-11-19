@@ -26,6 +26,45 @@ var forest = {
 	"alt": "Floresta da Alpha, primeira edição de Magic: The Gathering."
 };
 
+var gigantossauro = {
+    "title": "Gigantossauro",
+	"img": "../display/gigantossauro.jpg",
+	"alt": "Gigantossauro, custo de mana de cinco verdes."
+};
+
+var krenko = {
+    "title": "Krenko",
+	"img": "../display/krenko.jpg",
+	"alt": "Krenko, custo de mana de duas genéricas e uma vermelha"
+}
+
+var gorgon = {
+    "title": "Górgona Impiedosa",
+	"img": "../display/gorgon.jpg",
+	"alt": "Krenko, custo de mana de uma genérica e duas híbridas (verde e preto)."
+}
+
+var krasis = {
+    "title": "Krasis Hidroide",
+	"img": "../display/krasis.jpg",
+	"alt": "Krasis Hidroide, com custo de mana de X, uma verde e uma azul. Entra com X marcadores +1/+1."
+}
+
+var jovem = {
+    "title": "Jovem para Sempre",
+	"img": "../display/jovem.jpg",
+	"alt": "Coloque qualquer número de cards de criatura alvo do seu cemitério no topo de seu deck. Compre uma carta."
+}
+
+var ira = {
+    "title": "Ira de Kaya",
+	"img": "../display/ira.jpg",
+	"alt": "Destrua todas as criaturas."
+}
+
+
+
+
 // Display
 function display(x) {
     if ($(window).width()<=768) {
@@ -38,18 +77,6 @@ function display(x) {
 	$("#modal-title").html(x.title);
     $("#modal-img").attr("src", x.img);
 };
-
-
-
-// Navbar 
-function hambMenu() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
 
 
 // Hero
