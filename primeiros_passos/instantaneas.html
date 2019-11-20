@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Language" content="pt-br">
@@ -27,12 +27,12 @@
     <body>
         <script src="../script.js"></script>
 
-        <!------------ Background ------------>
+        <!-- ---------- Background ---------- -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/tyrants_scorn.jpg)">
 
 
-            <!---------------------- Navbar ---------------------->   
+            <!-- -------------------- Navbar -------------------- -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -109,7 +109,7 @@
             </nav>
 
 
-            <!---------------------- Title ---------------------->
+            <!-- -------------------- Title -------------------- -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
@@ -134,41 +134,42 @@
 
         <main class="container" id="main">
 
-            <!---------------------- Sidebar ---------------------->
+            <!-- -------------------- Sidebar -------------------- -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
-                    <div class="card">
+                    <div class="card sticky-top">
                         <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
                         <div class="card-footer"><p id="side-txt"></p></div>
                     </div>
                 </div>
 
 
-                <!-------------------- Article -------------------->
+                <!-- ------------------ Article ------------------ -->
 
                 <article class="col-md-8">
-                    <p>Nas lições anteriores, mencionamos algumas ações que podem ser realizadas no seu turno. Agora, vamos explicar melhor o que é esse turno, e como ele é organizado.</p>
-					<p>Cada jogador tem seu turno, no qual pode realizar ações. Quando o turno do jogador termina, imediatamente começa o do oponente (ou, no caso de jogos multiplayer, o do próximo jogador). Não há um momento entre dois turnos.</p>
-					<p>Os turnos são divididos em cinco fases, cada uma delas permitindo certas ações.</p>
-					<h2>Fase inicial</h2>
-					<p>A primeira ação do seu turno é desvirar todas as cartas do campo de batalha que estavam <a>viradas</a>. Depois disso, efeitos de cartas no campo de batalha que digam "no começo do turno" acontecem. Por fim, você compra a carta do topo do seu grimório e vai para a próxima fase.</p>
-					<p>Ser o primeiro a jogar é um fator que normalmente dá uma vantagem. Para compensar isso, no primeiro turno do primeiro jogador, ele não compra uma carta.</p>
-					<h2>Fase Principal (pré combate)</h2>
-					<p>Durante a fase principal, o jogador pode colocar até um terreno de sua mão no campo de batalha, e pode usar mana para conjurar mágicas de criatura e feitiços. Não há limite para a quantidade de mágicas conjuradas, desde que o jogador consiga gerar a mana necessária.</p>
-					<h2>Fase de Combate</h2>
-					<p>O combate foi descrito em detalhes na lição de <a>criaturas</a>. Para relembrar a ordem: o jogador atacante declara os atacantes, o defensor declara os bloqueadores, o atacante decide a ordem que o dano será dado, no caso de multiplos bloqueadores em uma única criatura, e por fim o dano é dado, simultaneamente. As criaturas que morrerem são colocadas no cemitério.</p>
-					<h2>Fase Principal (pós combate)</h2>
-					<p>Após o combate, há uma segunda fase principal. Caso o jogador não tenha colocado um terreno no campo de batalha nesse turno, ele pode fazer isso. Muitas vezes, é interessante conjurar as mágicas apenas na fase pós combate, para que o oponente decida os bloqueadores tendo menos informações sobre suas cartas.</p>
-					<h2>Fase Final</h2>
-					<p>Na última fase do turno, caso o jogador tenha mais de sete cartas na mão ele deve descartar até chegar a sete. </p>
+                    <h2></h2>
+                    <p>Você só pode conjurar criaturas e feitiços nas fases principais do seu turno. Isso significa que se você não pode conjurar uma <a class="display" href="javascript:void(0)" onclick="display(dissolucao)">Dissolução do Pensamento</a> para fazer o oponente descartar a carta que acabou de comprar, antes que possa conjurá-la.</p>
+                    <p>Mas isso não significa que você não pode interagir com o oponente durante o turno dele.</p>
+                    <p>As mágicas instantâneas são como os feitiços. Possuem um efeito pontual e são colocadas no cemitério. No entanto, diferente dos feitiços, você pode conjurar mágicas instantâneas fora das suas fases principais.</p>
+                    <p>Dessa maneira, se você tem um <a class="display" href="javascript:void(0)" onclick="display(murder)">Homicídio</a> na mão, você pode usá-lo para destruir uma criatura que o oponente acabou de colocar, ainda no turno dele.</p>
+                    <h2>Muitas opções</h2>
+                    <p>A existência de mágicas instantâneas adicionam toda uma camada de complexidade a uma partida de Magic. Será que é seguro atacar com sua criatura, ou os terrenos que seu oponente deixou desvirados são para uma emboscada? Vale mais a pena conjurar a <a class="display" href="javascript:void(0)" onclick="display(destemida)">Alabardeira Destemida</a> ou a <a class="display" href="javascript:void(0)" onclick="display(maaka)">Maaka Feroz</a> para poder dar um <a class="display" href="javascript:void(0)" onclick="display(choque)">Choque</a> em uma criatura que o oponente conjurar?</p>
+                    <h2>Truques de combate</h2>
+                    <p>Uma função importante das mágicas instantâneas são os truques de combate. Esses truques são efeitos que interferem no combate.</p>
+                    <p>Um exemplo disso é a carta <a class="display" href="javascript:void(0)" onclick="display(heroismo)">Momento de Heroísmo</a>. Você pode usá-la tanto no ataque quanto na defesa, para fazer com que uma criatura que você controla dê mais dano, ou impedir que ela morra por dano.</p>
+                    <h2>Lampejo</h2>
+                    <p>Uma das primeiras coisas que aprendemos é que, quando uma carta e uma regra entram em conflito, prevalece o texto da carta. Vamos ver agora um desses casos.</p>
+                    <p>Normalmente, só podemos conjurar criaturas em nossas fases principais. No entanto, uma criatura que tenha em seu texto a palavra-chave <em>lampejo</em> (<i>flash</i>, em inglês) pode ser conjurada em qualquer momento que você poderia conjurar uma mágica instantânea.</p>
+                    <p>Criaturas com lampejo nos abrem uma nova janela de possibilidades. Você estava em dúvida se queria conjurar uma criatura no seu turno ou guardar a mana para <a class="display" href="javascript:void(0)" onclick="display(opt)">Optar</a> no fim do turno de seu oponente? Se a criatura for um <a class="display" href="javascript:void(0)" onclick="display(sailor)">Marinheiro Espectral</a>, você pode esperar o oponente fazer sua jogada e decidir o que é melhor.</p>
+                    <p>Você também pode usar criaturas com flash para emboscar um atacante de seu oponente.</p><p>Depois de seu oponente ter declarado os atacantes, e antes de você declarar seus bloqueadores, pode conjurar o <a class="display" href="javascript:void(0)" onclick="display(sailor)">Emboscador da Matilha Noturna</a> e bloquear com ele.</p>
                 </article>
             </div>
         </main>
 
 
-        <!---------------------- Modal ---------------------->
-        
+        <!-- -------------------- Modal -------------------- -->
+
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -189,12 +190,12 @@
         </div>
 
 
-        <!---------------------- Bottom Bar ---------------------->
+        <!-- -------------------- Bottom Bar -------------------- -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">
                 <div class ="col-md-4 text-left bottom-btn" id="left-bottom">
-                    <a class="bottom-link" href="./terrenos.html">Anterior</a>
+                    <a class="bottom-link" href="./turno.html">Anterior</a>
                 </div>
                 <div class="col-sm text-center bottom-btn" id="home">
                     <a class="bottom-link" href="../index.html">Home</a>
@@ -203,7 +204,7 @@
                     <a class="bottom-link" href="../indice.html" >Índice</a>
                 </div>
                 <div class ="col-md-4 text-right bottom-btn" id="right-bottom">
-                    <a class="bottom-link" href="./feiticos.html">Próximo</a>
+                    <a class="bottom-link" href="../aprofundando.html">Próximo</a>
                 </div>
             </div>
         </nav>

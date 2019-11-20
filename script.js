@@ -62,6 +62,54 @@ var ira = {
 	"alt": "Destrua todas as criaturas."
 }
 
+var dissolucao = {
+    "title": "Dissolução do Pensamento",
+	"img": "../display/dissolucao.jpg",
+	"alt": "O oponente revela a própria mão. Você escolhe um card que não seja de terreno da mão dele. Aquele jogador descarta aquele card."
+}
+
+var murder = {
+    "title": "Homicídio",
+	"img": "../display/murder.jpg",
+	"alt": "Instantânea, destrua a criatura alvo."
+}
+
+var destemida = {
+    "title": "Alabardeira Destemida",
+	"img": "../display/destemida.jpg",
+	"alt": "Custo de 3 manas, poder 3 e resistência 2."
+}
+
+var maaka = {
+    "title": "Maaka Feroz",
+	"img": "../display/maaka.jpg",
+	"alt": "Custo de 2 manas, poder 2 e resistência 2."
+}
+
+var choque = {
+    "title": "Choque",
+	"img": "../display/choque.jpg",
+	"alt": "Custo de 1 de mana, instantânea, dê 2 de dano a qualquer alvo."
+}
+
+var heroismo = {
+    "title": "Momento de Heroísmo",
+	"img": "../display/heroismo.jpg",
+	"alt": "Instantânea, a criatura alvo recebe +2/+2 até o final do turno."
+}
+
+var sailor = {
+    "title": "Marinheiro Espectral",
+	"img": "../display/sailor.jpg",
+	"alt": "Criatura 1/1, lampejo."
+}
+
+var opt = {
+    "title": "Optar",
+	"img": "../display/opt.jpg",
+	"alt": "Instantânea, Vidência 1 e compre uma carta."
+}
+
 
 
 

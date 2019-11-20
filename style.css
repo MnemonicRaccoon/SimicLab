@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Stoke:300|Montserrat|Alegreya:400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Stoke:300|Montserrat|Alegreya:400i|Shadows+Into+Light&display=swap');
 
 
 body {
@@ -9,12 +9,12 @@ body {
 /* Navbar */
 .navbar {
     background-color: rgba(87,188,144, 0.9);
-    color: white;
+    color: #12353a;
     width: 100%;
 }
 
 .navbar-toggler-icon {
-    color: white;
+    color: #12353a;
 }
 
 .navbar li a {
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar li a:hover {
-    color: white;
+    color: #12353a;
 }
 
 .dropdown-menu {
@@ -30,12 +30,12 @@ body {
 }
 
 .dropdown-menu a {
-    color: white;
+    color: #12353a;
 }
 
 .dropdown-menu .dropdown-item:hover {
     background-color: #77c9d4;
-    color: white;
+    color: #12353a;
 }
 a {
     text-decoration: inherit;
@@ -46,6 +46,15 @@ a {
     content: none; 
 }
 
+.navbar-brand {
+    font-family: "Shadows into Light", serif;
+    color: #061213;
+    font-size: 24px;
+}
+
+.navbar-brand:hover {
+    color: #061213;
+}
 
 header {
     background-image: url(/background/forest.jpg);
@@ -107,7 +116,7 @@ hr {
 
 .blockquote-footer {
     font-size:14px;
-    color: #909090;
+    color: hsl(187, 23%, 70%);
 }
 
 

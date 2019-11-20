@@ -27,15 +27,18 @@
     <body>
         <script src="../script.js"></script>
 
-        <!------------ Background ------------>
+        <!-- ---------- Background ---------- -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/blighted_fen.jpg)">
 
 
-            <!---------------------- Navbar ---------------------->   
+            <!-- -------------------- Navbar -------------------- -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
-                <a class="navbar-brand" href="../index.html">SimicLab</a>
+                <a class="navbar-brand" href="../index.html" title="SimicLab">
+                    <img src="../logo.png" class="logo" alt="logo SimicLab" width="40px">
+                    SimicLab
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon">&#9776;</span>
@@ -109,7 +112,7 @@
             </nav>
 
 
-            <!---------------------- Title ---------------------->
+            <!-- -------------------- Title -------------------- -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
@@ -134,20 +137,21 @@
 
         <main class="container" id="main">
 
-            <!---------------------- Sidebar ---------------------->
+            <!-- -------------------- Sidebar -------------------- -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
-                    <div class="card">
+                    <div class="card sticky-top">
                         <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
                         <div class="card-footer"><p id="side-txt"></p></div>
                     </div>
                 </div>
 
 
-                <!-------------------- Article -------------------->
+                <!-- ------------------ Article ------------------ -->
 
                 <article class="col-md-8">
+                    <h2>Gerando Mana</h2>
                     <p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Mana" data-content="<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>">mana</a>.</p>
                     <p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
                     <p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Virar" data-content="<p>As cartas no campo de batalha podem estar em duas posições: viradas ou desviradas. Ao virar uma carta, ela é rotacionada em 90 graus, indicando que ela foi utilizada.</p><p>É comum o uso da expressão em inglês <i>tap</i>. Se um jogador disser que ele está <em>tapado</em>, significa que todos os seus terrenos estão virados.</p>">virados</a> para gerar mana da cor correspondente.</p>
@@ -165,7 +169,7 @@
         </main>
 
 
-        <!---------------------- Modal ---------------------->
+        <!-- -------------------- Modal -------------------- -->
         
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -187,7 +191,7 @@
         </div>
 
 
-        <!---------------------- Bottom Bar ---------------------->
+        <!-- -------------------- Bottom Bar -------------------- -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">
