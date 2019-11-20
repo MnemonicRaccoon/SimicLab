@@ -110,6 +110,69 @@ var opt = {
 	"alt": "Instantânea, Vidência 1 e compre uma carta."
 }
 
+var fires = {
+    "title": "Fogos da Invenção",
+	"img": "../display/fires.jpg",
+	"alt": "Fogos da Invenção."
+}
+
+var guardian = {
+    "title": "Projeto Guardião",
+	"img": "../display/guardian.jpg",
+	"alt": "Projeto Guardião."
+}
+
+var leyline = {
+    "title": "Linha de Força da Antecipação",
+	"img": "../display/leyline.jpg",
+	"alt": "Linha de Força da Antecipação."
+}
+
+var carvalho = {
+    "title": "Carvalhoforme",
+	"img": "../display/carvalho.jpg",
+	"alt": "Aura, criatura encantada recebe +3/+3."
+}
+
+var pacifismo = {
+    "title": "Pacifismo",
+	"img": "../display/pacifismo.jpg",
+	"alt": "Aura, criatura encantada não pode atacar nem bloquear."
+}
+
+var medalhao = {
+    "title":"Medalhão Dimir",
+    "img": "../display/pacifismo.jpg",
+    "alt": "Artefato, vire para gerar uma mana preta ou azul."
+}
+
+var estatua = {
+    "title":"Estátua do Faraó-Deus",
+    "img": "../display/estatua.jpg",
+    "alt": "Estátua do Faraó-Deus."
+}
+
+var altar = {
+    "title":"Altar Ensanguentado",
+    "img": "../display/altar.jpg",
+    "alt": "Altar Ensanguentado."
+}
+
+var golem = {
+    "title":"Golem Meteórico",
+    "img": "../display/meteor_golem.jpg",
+    "alt": "Golem Meteórico."
+}
+
+var martelo = {
+    "title":"Martelo do Colosso",
+    "img": "../display/martelo.jpg",
+    "alt": "Martelo do COlosso."
+}
+
+
+
+
 
 
 
