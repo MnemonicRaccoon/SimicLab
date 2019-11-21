@@ -188,6 +188,12 @@ var narset = {
     "alt": "Narset, Rasgadora de Véus."
 }
 
+var emboscador = {
+    "title":"Emboscador da Matilha Noturno",
+    "img": "../display/emboscador.jpg",
+    "alt": "Criatura 4/4, lampejo."
+}
+
 
 
 
