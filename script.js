@@ -170,6 +170,24 @@ var martelo = {
     "alt": "Martelo do COlosso."
 }
 
+var ral = {
+    "title":"Ral, Invocador de Tempestades",
+    "img": "../display/ral.jpg",
+    "alt": "Ral, Invocador de Tempestades."
+}
+
+var kiora = {
+    "title":"Kiora, Invocadora de Behemoths",
+    "img": "../display/kiora.jpg",
+    "alt": "Kiora, Invocadora de Behemoths."
+}
+
+var narset = {
+    "title":"Narset, Rasgadora de Véus",
+    "img": "../display/narset.jpg",
+    "alt": "Narset, Rasgadora de Véus."
+}
+
 
 
 
