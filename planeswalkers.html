@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="pt-br">
+
+        <meta name="viewport" content="width=device-width">
+        <title>SimicLab - Primeiros Passos</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" async></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" async></script>
+
+        <!-- My CSS -->
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <script src="../script.js" async></script>
+
+        <!--  Background  -->
+
+        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/mu_yanling.jpg)">
+
+
+            <!--  Navbar  -->   
+
+            <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
+                <a class="navbar-brand" href="../index.html">SimicLab</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                Primeiros Passos
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="./terrenos.html">Terrenos</a>
+                                <a class="dropdown-item" href="./criaturas.html">Criaturas</a>
+                                <a class="dropdown-item" href="./turno.html">Turno</a>
+                                <a class="dropdown-item" href="./feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="./instantaneas.html">Mágicas Instantâneas</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                                Explorando
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../explorando/zonas.html">Zonas</a>
+                                <a class="dropdown-item" href="../explorando/encantamentos.html">Encantamentos</a>
+                                <a class="dropdown-item" href="../explorando/artefatos.html">Artefatos</a>
+                                <a class="dropdown-item" href="../explorando/planeswalkers.html">Planeswalkers</a>
+                                <a class="dropdown-item" href="../explorando/habilidades.html">Habilidades</a>
+                                <a class="dropdown-item" href="../explorando/pilha.html">Pilha</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                                Aprofundando
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Cores</a>
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Formatos</a>
+                                <a class="dropdown-item" href="../aprofundando/cores.html">Deckbuilding</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop4" data-toggle="dropdown">
+                                Estratégia
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../estrategia/interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="../estrategia/vantagem.html">Vantagem de Cartas</a>
+                                <a class="dropdown-item" href="../estrategia/tempo.html">Tempo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop5" data-toggle="dropdown">
+                                Mais
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../mais/glossario.html">Glossário</a>
+                                <a class="dropdown-item" href="../mais/sobre.html">Sobre</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+
+
+            <!--  Title  -->
+
+            <div class="container section">
+                <div class="text-center" id="section-box">
+                    <a href="#main" tabindex="1">
+                        <h1 class="text-center" id="title">Planesalkers</h1>
+                    </a>
+
+
+                    <hr/>
+
+                    <blockquote class="blockquote text-right">
+                        <p class="quote">A natureza é essencialmente selvagem, em todas as suas formas.</p>
+                        <footer class="blockquote-footer" id="quote">Encarnação Feral</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <main class="container" id="main">
+
+            <!--  Sidebar  -->
+
+            <div class="row">
+                <div class="col-md-4" id="sidebar">
+                    <div class="card sticky-top">
+                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
+                        <div class="card-footer"><p id="side-txt"></p></div>
+                    </div>
+                </div>
+
+
+                <!--  Article  -->
+
+                <article class="col-md-8">
+                    <h2>Tipos</h2>
+                    <p>Chegou a hora de conhecermos o último tipo de permanente: os <em>Planeswalkers</em>. Na <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Lore" data-content="<p>A <i>lore</i> de Magic é toda a mitologia dos mundos em que o jogo se passa. Além das referências nas próprias cartas, você pode conhecer mais sobre ela lendo os livros e artigos na página da Wizards of the Coast.</p>">lore</a> de Magic: the Gathering, os planeswalkers (ou planinautas) são magos capazes de viajar entre os planos do Multiverso.</p>
+					<p>Os planeswalkers possuem uma mecânica bastante diferente das outras permatentes. Eles entram no campo com uma quantidade de marcadores de lealdade indicada na parte inferior direita da carta. A lealdade é análoga aos pontos de vida de um jogador. Na sua fase de combate, você pode decidir se cada uma das criaturas atacantes vai estar atacando o oponente ou um planeswalker que ele controla. Qualquer dano aplicado a um planeswalker causa a retirada daquela quantidade de marcadores de lealdade. Se a lealdade chega a zero, o planeswalker é colocado no cemitério.</p>
+                    <h2>Habilidades de Lealdade</h2>
+					<p>Cada planeswalker possui uma série de habilidades de lealdade. Cada uma delas possui um custo, que afeta a lealdade daquele planeswalker. Durante uma de suas fases principais, você pode utilizar uma dessas habilidades. Habilidades com custo positivo aumentam a lealdade, e com custo negativo diminuem. Uma habilidade de custo negativo só ode ser ativada se o planeswalker possuir marcadores lealdade o suficiente. É comum que exista uma habilidade com custo alto e grande impacto no jogo, muitas vezes levando o jogador à vitória. Depois de ativada uma habilidade de lealdade, um planeswalker só pode ter uma habilidade ativada no turno seguinte.</p>
+					<p>Para entender um pouco melhor as habilidades de lealdade, vamos ver o <a class="display" href="javascript:void(0)" onclick="display(ral)">Ral, Invocador de Tempestades</a>. Ele entra no campo de batalha com quatro marcadores de lealdade, podendo usar sua habilidade +1 para comprar uma carta e ir a cinco de lealdade, ou a -2 para causar três pontos de dano e ir a 2 pontos de lealdade. Para poder usar a habilidade -7, que fará com que você compre sete cartas e provavelmete destruirá todas as criaturas controladas pelo oponente, é preciso que a lealdade de Ral chegue a sete, usando a +1 por vários turnos. Para impedir que você consiga fazer isso, é provavel que o seu oponente tenta aplicar dano a Ral, com feitiços, mágicas instantâneas ou atacando com criaturas. Você pode bloquear criaturas que atacam seus planeswalkers da mesma forma que bloqueia ataques diretos.</p>
+                    <h2>Habilidades Estáticas</h2>
+					<p>Alguns planeswalkers possuem habilidades estáticas. Como os encantamentos, essas habilidades afetam o funcionamento do jogo enquanto ele estiver em campo. A <a class="display" href="javascript:void(0)" onclick="display(kiora)">Kiora, Invocadora de Behemots</a>, por exemplo, permite que você compre uma carta toda vez que uma criatura com poder igual ou superior a quatro entra no campo de batalha.</p>
+					<p>Note que caso você controle uma Kiora e o oponente controle uma <a class="display" href="javascript:void(0)" onclick="display(narset)">Narset, Rasgadora de Véus</a>, e você conjurar um <a class="display" href="javascript:void(0)" onclick="display(gigantossauro)">Gigantossauro</a>, a Narset te impedirá de comprar uma carta, já que você comprou no começo do seu turno. No entanto, se você conjurar o <a class="display" href="javascript:void(0)" onclick="display(emboscador)">Emboscador da Matilha Noturna</a> no turno do oponente, você poderá comprar uma carta, caso ainda não tenha usado um efeito de comprar carta naquele turno.</p>
+                </article>
+            </div>
+        </main>
+
+
+        <!--  Modal  -->
+        
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--  Bottom Bar  -->
+
+        <nav class="container" id="bottom-bar">
+            <div class="row">
+                <div class ="col-md-4 text-left bottom-btn" id="left-bottom">
+                    <a class="bottom-link" href="../explorando.html">Anterior</a>
+                </div>
+                <div class="col-sm text-center bottom-btn" id="home">
+                    <a class="bottom-link" href="../index.html">Home</a>
+                </div>
+                <div class="col-sm text-center bottom-btn" id="indice">
+                    <a class="bottom-link" href="../indice.html" >Índice</a>
+                </div>
+                <div class ="col-md-4 text-right bottom-btn" id="right-bottom">
+                    <a class="bottom-link" href="./artefatos.html">Próximo</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </body>
+</html>
