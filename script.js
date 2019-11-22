@@ -194,6 +194,42 @@ var emboscador = {
     "alt": "Criatura 4/4, lampejo."
 }
 
+var priest = {
+    "title":"Sacerdotisa dos Deuses Esquecidos",
+    "img": "../display/priest.jpg",
+    "alt": "Sacerdotisa dos Deuses Esquecidos."
+}
+
+var ayara = {
+    "title":"Ayara, Primeira de Locthwain",
+    "img": "../display/ayara.jpg",
+    "alt": "Ayara, Primeira de Locthwain."
+}
+
+var espreitador = {
+    "title":"Espreitador de Ashiok",
+    "img": "../display/espreitador.jpg",
+    "alt": "Espreitador de Ashiok."
+}
+
+var guildmage = {
+    "title":"Maga da Guilda da Casa",
+    "img": "../display/guildmage.jpg",
+    "alt": "Maga da Guilda da Casa."
+}
+
+var kenrith = {
+    "title":"Kenrith, o Rei Regresso",
+    "img": "../display/kenrith.jpg",
+    "alt": "Kenrith, o Rei Regresso."
+}
+
+var aguia = {
+    "title":"Águia Empírea",
+    "img": "../display/aguia_empirea.jpg",
+    "alt": "Águia Empírea."
+}
+
 
 
 
