@@ -27,12 +27,12 @@
     <body>
         <script src="../script.js" async></script>
 
-        <!-- ---------- Background ---------- -->
+        <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/blighted_fen.jpg)">
 
 
-            <!-- -------------------- Navbar -------------------- -->   
+            <!--  Navbar  -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html" title="SimicLab">
@@ -112,12 +112,12 @@
             </nav>
 
 
-            <!-- -------------------- Title -------------------- -->
+            <!--  Title  -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
-                    <a href="#main" tabindex="1">
-                        <h1 class="text-center" id="title">Terrenos</h1>
+                    <a class="text-center" id="title">
+                        Terrenos
                     </a>
 
 
@@ -137,7 +137,7 @@
 
         <main class="container" id="main">
 
-            <!-- -------------------- Sidebar -------------------- -->
+            <!-- Sidebar -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
@@ -148,29 +148,35 @@
                 </div>
 
 
-                <!-- ------------------ Article ------------------ -->
+                <!-- Article -->
 
                 <article class="col-md-8">
-                    <h2>Gerando Mana</h2>
-                    <p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Mana" data-content="<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>">mana</a>.</p>
-                    <p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
-                    <p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Virar" data-content="<p>As cartas no campo de batalha podem estar em duas posições: viradas ou desviradas. Ao virar uma carta, ela é rotacionada em 90 graus, indicando que ela foi utilizada.</p><p>É comum o uso da expressão em inglês <i>tap</i>. Se um jogador disser que ele está <em>tapado</em>, significa que todos os seus terrenos estão virados.</p>">virados</a> para gerar mana da cor correspondente.</p>
-                    <p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
-                    <ul>
-                        <li> Branco: <a class="display" href="javascript:void(0)" onclick="display(plains)">Planície</a></li>
-                        <li> Azul: <a class="display" href="javascript:void(0)" onclick="display(island)">Ilha</a></li>
-                        <li> Preto: <a class="display" href="javascript:void(0)" onclick="display(swamp)">Pântano</a></li>
-                        <li> Vermelho: <a class="display" href="javascript:void(0)" onclick="display(mountain)">Montanha</a></li>
-                        <li> Verde: <a class="display" href="javascript:void(0)" onclick="display(forest)">Floresta</a></li>
-                    </ul>
-                    <p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
+                    <h1>Terrrenos</h1>
+                    <section>
+                        <h2>Gerando Mana</h2>
+                        <p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Mana" data-content="<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>">mana</a>.</p>
+                        <p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
+                        <p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Virar" data-content="<p>As cartas no campo de batalha podem estar em duas posições: viradas ou desviradas. Ao virar uma carta, ela é rotacionada em 90 graus, indicando que ela foi utilizada.</p><p>É comum o uso da expressão em inglês <i>tap</i>. Se um jogador disser que ele está <em>tapado</em>, significa que todos os seus terrenos estão virados.</p>">virados</a> para gerar mana da cor correspondente.</p>
+                    </section>
+                    <section>
+                        <h2>Terrenos básicos</h2>
+                        <p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
+                        <ul>
+                            <li> Branco: <a class="display" href="javascript:void(0)" onclick="display(plains)">Planície</a></li>
+                            <li> Azul: <a class="display" href="javascript:void(0)" onclick="display(island)">Ilha</a></li>
+                            <li> Preto: <a class="display" href="javascript:void(0)" onclick="display(swamp)">Pântano</a></li>
+                            <li> Vermelho: <a class="display" href="javascript:void(0)" onclick="display(mountain)">Montanha</a></li>
+                            <li> Verde: <a class="display" href="javascript:void(0)" onclick="display(forest)">Floresta</a></li>
+                        </ul>
+                        <p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
+                    </section>
                 </article>
             </div>
         </main>
 
 
-        <!-- -------------------- Modal -------------------- -->
-        
+        <!--  Modal  -->
+
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -183,7 +189,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>
@@ -191,7 +197,7 @@
         </div>
 
 
-        <!-- -------------------- Bottom Bar -------------------- -->
+        <!-- Bottom Bar -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">

@@ -27,12 +27,12 @@
     <body>
         <script src="../script.js"></script>
 
-        <!-- ---------- Background ---------- -->
+        <!-- Background -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/spinning_wheel.jpg)">
 
 
-            <!-- -------------------- Navbar -------------------- -->   
+            <!-- Navbar -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -109,20 +109,24 @@
             </nav>
 
 
-            <!-- -------------------- Title -------------------- -->
+            <!-- Title -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
-                    <a href="#main" tabindex="1">
-                        <h1 class="text-center" id="title">Artefatos</h1>
+                    <a class="text-center" id="title">
+                        Artefatos
                     </a>
 
 
                     <hr/>
 
                     <blockquote class="blockquote text-right">
-                        <p class="quote">A natureza é essencialmente selvagem, em todas as suas formas.</p>
-                        <footer class="blockquote-footer" id="quote">Encarnação Feral</footer>
+                        <p class="quote">
+                            A natureza é essencialmente selvagem, em todas as suas formas.
+                        </p>
+                        <footer class="blockquote-footer" id="quote">
+                            Encarnação Feral
+                        </footer>
                     </blockquote>
                 </div>
             </div>
@@ -134,7 +138,7 @@
 
         <main class="container" id="main">
 
-            <!-- -------------------- Sidebar -------------------- -->
+            <!-- Sidebar -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
@@ -145,31 +149,38 @@
                 </div>
 
 
-                <!-- ------------------ Article ------------------ -->
+                <!-- Article -->
 
-                <article class="col-md-8">
-                    <h2>Objetos inanimados</h2>
-                    <p>O próximo tipo de carta que vamos ver são os <em>artefatos</em>. Como o nome indica, essas cartas representam itens e objetos que podem ser utilizados para ajudar em uma batalha de Magic.</p>
-                    <p>Como veremos mais para a frente, cada uma das cores de Magic possui sua forma de ver o mundo. Como os artefatos representam objetos sem consciência própria, a maior parte deles é incolor (havendo excessões, como você poderia esperar).</p>
-                    <p>Embora alguns artefatos possuam um efeito constante e duradouro, como os encantamentos (a <a class="display" href="javascript:void(0)" onclick="display(estatua)">Estátua do Faraó-Deus</a>, por exemplo), a maioria deles deve ser ativada para que o efeito aconteça. Na maioria dos casos, a ativação exige que o artefato seja virado, fazendo com que só possa acontecer uma vez a cada turno.</p>
-                    <p>O <a class="display" href="javascript:void(0)" onclick="display(altar)">Altar Ensanguentado</a> é um exemplo de artefato preto que, quando ativado, traz uma criatura do cemitério para o campo de batalha. Para isso, no entanto, é necessário descartar uma carta, pagar dois pontos de vida e sacrificar uma criatura, além de virar o artefato. Caso não haja um efeito que desvire ele, o efeito só poderá ser utilizado novamente no seu próximo turno, depois de ter desvirado suas cartas.</p>
-                    <h2>Pedras de Mana</h2>
-                    <p>Uma função comum dos artefatos é gerar mana. Conhecidos como <em>pedras de mana</em>, esses artefatos, assim como os terrenos, podem ser virados para gerar mana.</p>
-                    <p>As pedras de mana são um jeito de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Ramp" data-content="<p><i>Ramp</i>, ou acelerar, é uma estratégia usada em alguns decks que querem poder conjurar mágicas de custo alto mais cedo.</p><p>O uso de pedras de mana é uma das formas de <i>ramp</i>, que também pode ser feito com criaturas que geram mana ou com efeitos que permitem colocar mais de um terreno no campo durante o turno.</p>"><i>rampar</i></a>, permitindo que mágicas de custo mais alto possam ser jogadas mais cedo.</p>
-                    <p>Como os artefatos não possuem enjoo de conjuração, como as criaturas, eles podem ser ativados no turno em que entram. Dessa maneira, no seu terceito turno, você pode pagar três manas para conjurar um <a class="display" href="javascript:void(0)" onclick="display(medalhao)">Medalhão Dimir</a> e no mesmo turno usá-lo para gerar uma mana azul e <a class="display" href="javascript:void(0)" onclick="display(opt)">Optar</a>.</p>
-                    <h2>Equipamentos</h2>
-                    <p>Os equipamentos em geral representam armas, que podem alterar o poder e a resistência de uma criatura (mas também outras características).</p>
-                    <p>Diferente de uma aura, que é conjurada com uma criatura alvo, e vai para o cemitério caso essa criatura morra, os equipamentos são conjurados para o campo de batalha e depois devem ser equipados. Caso a criatura equipada morra, o artefato permanece no campo de batalha. Além disso, o controlador pode pagar o custo de equipar para trocar a criatura equipada.</p>
-                    <p>Um exemplo de equipamento é o <a class="display" href="javascript:void(0)" onclick="display(martelo)">Martelo do Colosso</a>, que custa apenas uma mana para ser conjurado mas precisa de oito para ser equipado, dando à criatura +10/+10.</p>
-                    <h2>Criaturas Artefato</h2>
-                    <p>Alguns artefatos, como o <a class="display" href="javascript:void(0)" onclick="display(golem)">Golem Meteórico</a>, também são criaturas. Eles funcionam da mesma maneira que as outras criaturas, possuindo poder e resistência e não podendo atacar no mesmo turno em que são conjuradas. Apesar de funcionar da mesma forma, é importante prestar atenção, porque criaturas artefato podem ser destruídas por efeitos que dão alvo tanto em criaturas quanto em artefatos.</p>
+                <article class="col-md-8" id="content">
+                    <h1>Artefatos</h1>
+                    <section>
+                        <h2>Objetos inanimados</h2>
+                        <p>O próximo tipo de carta que vamos ver são os <em>artefatos</em>. Como o nome indica, essas cartas representam itens e objetos que podem ser utilizados para ajudar em uma batalha de Magic.</p>
+                        <p>Como veremos mais para a frente, cada uma das cores de Magic possui sua forma de ver o mundo. Como os artefatos representam objetos sem consciência própria, a maior parte deles é incolor (havendo excessões, como você poderia esperar).</p>
+                        <p>Embora alguns artefatos possuam um efeito constante e duradouro, como os encantamentos (a <a class="display" href="javascript:void(0)" onclick="display(estatua)">Estátua do Faraó-Deus</a>, por exemplo), a maioria deles deve ser ativada para que o efeito aconteça. Na maioria dos casos, a ativação exige que o artefato seja virado, fazendo com que só possa acontecer uma vez a cada turno.</p>
+                        <p>O <a class="display" href="javascript:void(0)" onclick="display(altar)">Altar Ensanguentado</a> é um exemplo de artefato preto que, quando ativado, traz uma criatura do cemitério para o campo de batalha. Para isso, no entanto, é necessário descartar uma carta, pagar dois pontos de vida e sacrificar uma criatura, além de virar o artefato. Caso não haja um efeito que desvire ele, o efeito só poderá ser utilizado novamente no seu próximo turno, depois de ter desvirado suas cartas.</p>
+                    </section>
+                    <section>
+                        <h2>Pedras de Mana</h2>
+                        <p>Uma função comum dos artefatos é gerar mana. Conhecidos como <em>pedras de mana</em>, esses artefatos, assim como os terrenos, podem ser virados para gerar mana.</p>
+                        <p>As pedras de mana são um jeito de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Ramp" data-content="<p><i>Ramp</i>, ou acelerar, é uma estratégia usada em alguns decks que querem poder conjurar mágicas de custo alto mais cedo.</p><p>O uso de pedras de mana é uma das formas de <i>ramp</i>, que também pode ser feito com criaturas que geram mana ou com efeitos que permitem colocar mais de um terreno no campo durante o turno.</p>"><i>rampar</i></a>, permitindo que mágicas de custo mais alto possam ser jogadas mais cedo.</p>
+                        <p>Como os artefatos não possuem enjoo de conjuração, como as criaturas, eles podem ser ativados no turno em que entram. Dessa maneira, no seu terceito turno, você pode pagar três manas para conjurar um <a class="display" href="javascript:void(0)" onclick="display(medalhao)">Medalhão Dimir</a> e no mesmo turno usá-lo para gerar uma mana azul e <a class="display" href="javascript:void(0)" onclick="display(opt)">Optar</a>.</p>
+                        <h2>Equipamentos</h2>
+                        <p>Os equipamentos em geral representam armas, que podem alterar o poder e a resistência de uma criatura (mas também outras características).</p>
+                        <p>Diferente de uma aura, que é conjurada com uma criatura alvo, e vai para o cemitério caso essa criatura morra, os equipamentos são conjurados para o campo de batalha e depois devem ser equipados. Caso a criatura equipada morra, o artefato permanece no campo de batalha. Além disso, o controlador pode pagar o custo de equipar para trocar a criatura equipada.</p>
+                        <p>Um exemplo de equipamento é o <a class="display" href="javascript:void(0)" onclick="display(martelo)">Martelo do Colosso</a>, que custa apenas uma mana para ser conjurado mas precisa de oito para ser equipado, dando à criatura +10/+10.</p>
+                    </section>
+                    <section>
+                        <h2>Criaturas Artefato</h2>
+                        <p>Alguns artefatos, como o <a class="display" href="javascript:void(0)" onclick="display(golem)">Golem Meteórico</a>, também são criaturas. Eles funcionam da mesma maneira que as outras criaturas, possuindo poder e resistência e não podendo atacar no mesmo turno em que são conjuradas. Apesar de funcionar da mesma forma, é importante prestar atenção, porque criaturas artefato podem ser destruídas por efeitos que dão alvo tanto em criaturas quanto em artefatos.</p>
+                    </section>
                 </article>
             </div>
         </main>
 
 
-        <!-- -------------------- Modal -------------------- -->
-        
+        <!-- Modal -->
+
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -182,7 +193,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>
@@ -190,7 +201,7 @@
         </div>
 
 
-        <!-- -------------------- Bottom Bar -------------------- -->
+        <!-- Bottom Bar -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">

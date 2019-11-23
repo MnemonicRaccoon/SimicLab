@@ -158,21 +158,34 @@
 
                 <article class="col-md-8" id="content">
                     <h1>Pilha</h1>
-                    <p>Quando conjuramos uma mágica, ela não é resolvida imediatamente. Antes disso, o oponente (ou nós mesmos) tem a oportunidade de fazer alguma ação em resposta. As mágicas que ainda não foram resolvidas vão para uma zona chamada <em>pilha</em>.</p>
-                    <h2>Prioridade</h2>
-                    <p>Em cada momento do jogo, apenas um jogador tem prioridade. Isso significa que aquele jogador pode conjurar mágicas e ativar habilidades. Feitiços e criaturas só podem ser conjurados pelo jogador se ele tiver prioridade, for sua fase principal e sua pilha estiver vazia.</p>
-                    <p>Enquanto tiver prioridade, o jogador pode ativar habilidades e conjurar mágicas quantas vezes quiser. Essas mágicas, antes de serem resolvidas, vão para a pilha. Quando o jogador quiser, ele passa a prioridade para o outro jogador, que pode conjurar mágicas e ativar habilidades. Isso se repete até que os dois jogadores passem a prioridade cosecutivamente.</p>
-                    <h2>De cima para baixo</h2>
-                    <p>A pilha recebe esse nome porque cada uma das mágicas nela é colocada empilhada em cima das anteriores. Quando os dois jogadores passam a prioridade, elas podem ser resolvidas. Isso acontece sempre de cima para baixo.</p>
-                    <p>A cada mágica da pilha que é resolvida, o <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Jogador Ativo" data-content="<p>Jogador ativo é aquele de quem é o turno atual.</p>">jogador ativo</a> recebe prioridade. A mágica seguinte só é resolvida após os dois jogadores passarem a prioridade consecutivamente.</p>
-                    <p>Durante cada etapa de seu turno, o jogador ativo tem prioridade. Quando ele quer passar para a próxima etapa, ele passa a prioridade para o próximo jogador. Caso ele também passe a prioridade, o turno segue para a próxima etapa. Em outras palavras, o jogo segue para a próxima etapa quando os dois jogadores passam a prioridade com a pilha vazia.</p>
-                    <p>É comum que algumas mágicas instantâneas sejam conjuradas no final do turno do oponente, quando ele não pode mais conjurar criaturas ou feitiços.</p>
-                    <h2>Habilidades desencadeadas</h2>
-                    <p>As habilidades desencadeadas vão para a pilha, da mesma forma que as ativadas, mas não precisam que seu controlador tenha prioridade. Se duas ou mais habilidades são desencadeadas ao mesmo tempo, cada jogador pode ordenar suas habilidades na pilha da forma que quiser, e as do jogador ativo são colocadas embaixo das do oponente.</p>
-                    <h2>Habilidades de mana</h2>
-                    <p>As habilidades ativadas ou desencadeadas ou ativadas que geram mana são chamadas <em>habilidades de mana</em>. Essas habilidades não usam a pilha. Portanto, ao gerar mana com uma <a class="display" href="javascript:void(0)" onclick="display(druida)">Druida do Paraíso</a>, você não passa a prioridade ao oponente</p>
-                    <h2>Em resposta...</h2>
-                    <p>O passo a passo da resolução de mágicas que foi descrito aqui na maior parte das vezes não é abordado durante as partidas. Ao invés disso, é comum que o jogador do turno conjure faça suas ações sem perguntar a cada uma delas se o oponente vai fazer algo. Caso o oponente queira conjurar uma mágica em um momento em que, pelas regras, tem prioridade, ele anuncia "Em resposta, eu vou...". Devido a essa dinâmica, é uma boa prática jogar deixando claro o que está fazendo  e em um ritmo em que seu oponente possa acompanhar suas ações e tenha tempo de responder.</p>
+                    <section>
+                        <p>Quando conjuramos uma mágica, ela não é resolvida imediatamente. Antes disso, o oponente (ou nós mesmos) tem a oportunidade de fazer alguma ação em resposta. As mágicas que ainda não foram resolvidas vão para uma zona chamada <em>pilha</em>.</p>
+                    </section>
+                    <section>
+                        <h2>Prioridade</h2>
+                        <p>Em cada momento do jogo, apenas um jogador tem prioridade. Isso significa que aquele jogador pode conjurar mágicas e ativar habilidades. Feitiços e criaturas só podem ser conjurados pelo jogador se ele tiver prioridade, for sua fase principal e sua pilha estiver vazia.</p>
+                        <p>Enquanto tiver prioridade, o jogador pode ativar habilidades e conjurar mágicas quantas vezes quiser. Essas mágicas, antes de serem resolvidas, vão para a pilha. Quando o jogador quiser, ele passa a prioridade para o outro jogador, que pode conjurar mágicas e ativar habilidades. Isso se repete até que os dois jogadores passem a prioridade cosecutivamente.</p>
+                    </section>
+                    <section>
+                        <h2>De cima para baixo</h2>
+                        <p>A pilha recebe esse nome porque cada uma das mágicas nela é colocada empilhada em cima das anteriores. Quando os dois jogadores passam a prioridade, elas podem ser resolvidas. Isso acontece sempre de cima para baixo.</p>
+                        <p>A cada mágica da pilha que é resolvida, o <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Jogador Ativo" data-content="<p>Jogador ativo é aquele de quem é o turno atual.</p>">jogador ativo</a> recebe prioridade. A mágica seguinte só é resolvida após os dois jogadores passarem a prioridade consecutivamente.</p>
+                        <p>Uma habilidade ativada na pilha é resolvida mesmo se sua fonte for destruída. Se, por exemplo, um jogador ativar uma habilidade de lealdade de um planeswalker, e o oponente responder com uma instantânea que destrua o planeswalker, o efeito ainda acontece.</p>
+                        <p>Durante cada etapa de seu turno, o jogador ativo tem prioridade. Quando ele quer passar para a próxima etapa, ele passa a prioridade para o próximo jogador. Caso ele também passe a prioridade, o turno segue para a próxima etapa. Em outras palavras, o jogo segue para a próxima etapa quando os dois jogadores passam a prioridade com a pilha vazia.</p>
+                        <p>É comum que algumas mágicas instantâneas sejam conjuradas no final do turno do oponente, quando ele não pode mais conjurar criaturas ou feitiços.</p>
+                        <p>Vamos supor que você esteja atacando com o <a class="display" href="javascript:void(0)" onclick="display(krenko)">Krenko, Chefão da Rua do Estanho</a>. A habilidade dele vai para a pilha. Se seu oponente tiver um <a class="display" href="javascript:void(0)" onclick="display(choque)">choque</a> na mão, ele pode conjurar com alvo no Krenko, para que ele receba 2 de dano antes de receber +1/+1, e morra. A habilidade do Krenko continua na pilha, mas como ele está no cemitério, não tem mais poder, e nenhuma ficha é criada.</p>
+                        <p>No entanto, se você usar um <a class="display" href="javascript:void(0)" onclick="display(heroismo)">Momento de Heroísmo</a> em resposta, o Krenko recebe +2/+2, leva 2 de dano com o choque e não morre. A habilidade do Krenko é resolvida, colocando um marcador +1/+1 nele e gerando cinco fichas de goblin.</p>
+                        <h2>Habilidades desencadeadas</h2>
+                        <p>As habilidades desencadeadas vão para a pilha, da mesma forma que as ativadas, mas não precisam que seu controlador tenha prioridade. Se duas ou mais habilidades são desencadeadas ao mesmo tempo, cada jogador pode ordenar suas habilidades na pilha da forma que quiser, e as do jogador ativo são colocadas embaixo das do oponente.</p>
+                    </section>
+                    <section>
+                        <h2>Habilidades de mana</h2>
+                        <p>As habilidades ativadas ou desencadeadas ou ativadas que geram mana são chamadas <em>habilidades de mana</em>. Essas habilidades não usam a pilha. Portanto, ao gerar mana com uma <a class="display" href="javascript:void(0)" onclick="display(druida)">Druida do Paraíso</a>, você não passa a prioridade ao oponente</p>
+                    </section>
+                    <section>
+                        <h2>Em resposta...</h2>
+                        <p>O passo a passo da resolução de mágicas que foi descrito aqui na maior parte das vezes não é abordado durante as partidas. Ao invés disso, é comum que o jogador do turno conjure faça suas ações sem perguntar a cada uma delas se o oponente vai fazer algo. Caso o oponente queira conjurar uma mágica em um momento em que, pelas regras, tem prioridade, ele anuncia "Em resposta, eu vou...". Devido a essa dinâmica, é uma boa prática jogar deixando claro o que está fazendo  e em um ritmo em que seu oponente possa acompanhar suas ações e tenha tempo de responder.</p>
+                    </section>
                 </article>
             </div>
         </main>
@@ -192,7 +205,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>

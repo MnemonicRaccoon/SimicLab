@@ -28,12 +28,12 @@
     <body>
         <script src="../script.js"></script>
 
-        <!-- ---------- Background ---------- -->
+        <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/gishath.jpg)">
 
 
-            <!-- -------------------- Navbar -------------------- -->   
+            <!--  Navbar  -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -110,20 +110,25 @@
             </nav>
 
 
-            <!-- -------------------- Title -------------------- -->
+            <!--  Title  -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
-                    <a href="#main" tabindex="1">
-                        <h1 class="text-center" id="title">Criaturas</h1>
+                    
+                    <a class="text-center" id="title">
+                        Criaturas
                     </a>
 
 
                     <hr/>
 
                     <blockquote class="blockquote text-right">
-                        <p class="quote">A natureza é essencialmente selvagem, em todas as suas formas.</p>
-                        <footer class="blockquote-footer" id="quote">Encarnação Feral</footer>
+                        <p class="quote">
+                            A natureza é essencialmente selvagem, em todas as suas formas.
+                        </p>
+                        <footer class="blockquote-footer" id="quote">
+                            Encarnação Feral
+                        </footer>
                     </blockquote>
                 </div>
             </div>
@@ -135,7 +140,7 @@
 
         <main class="container" id="main">
 
-            <!-- -------------------- Sidebar -------------------- -->
+            <!--  Sidebar  -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
@@ -146,11 +151,15 @@
                 </div>
 
 
-                <!-- ------------------ Article ------------------ -->
+                <!--  Article  -->
 
-                <article class="col-md-8">
+                <article class="col-md-8" id="content">
+                    <h1>Criaturas</h1>
+					<section>
+                    <p>O uso mais comum da mana gerada pelos terrenos é conjurar mágicas. Existem vários tipos de mágicas diferentes, e a primeira que vamos ver são as CRIATURAS.</p>
+                    </section>
+                    <section>
                     <h2>Anatomia</h2>
-					<p>O uso mais comum da mana gerada pelos terrenos é conjurar mágicas. Existem vários tipos de mágicas diferentes, e a primeira que vamos ver são as CRIATURAS.</p>
 					<div class="img_container">
 						<img src="../article_img/aguia_empirea.jpg" alt="Águia Empírea" class="img_article">
 					</div>
@@ -158,21 +167,26 @@
 					<p>No canto inferior direito temos o PODER e a RESISTÊNCIA da criatura. O poder indica a quantidade de dano que ela atribui no combate, e a resistência mostra a quantidade de dano necessária para matar ela.</p>
 					<p>Como vimos na lição anterior, cada mágica precisa de mana para ser conjurada. O CUSTO DE MANA está indicado no canto superior direito da carta. No custo de mana, podemos ter indicação de mana de cada uma das cinco cores ou de mana genérica (que pode ser pago com qualquer cor). A Águia Empírea precisa de uma mana branco, uma azul e uma genérica para ser conjurada. Nos exemplos abaixo, o custo de mana de <a class="display" href="javascript:void(0)" onclick="display(krenko)">Krenko, Chefão da Rua do Estanho</a> é de uma vermelha e duas genéricas e do <a class="display" href="javascript:void(0)" onclick="display(gigantossauro)">Gigantossauro</a> é cinco verdes.</p>
                     <p>Abaixo da linha de tipo, temos um texto que indica as habilidades da carta. Vamos discutir melhor essas habilidades em uma próxima lição. O texto abaixo, em itálico, é o <i>flavor</i>. Ele não afeta a jogabilidade, mas nos dá vislumbres dos mundos de Magic.</p>
+                    </section>
+                    <section>
                     <h2>Mana híbrida e custos X</h2>
                     <p>A maioria das mágicas possue um custo de mana como o dos exemplo acima. Existem, no entanto, algumas excessões</p>
                     <p>Custos de mana híbrido podem ser pago com uma de duas cores diferentes. É o caso da <a class="display" href="javascript:void(0)" onclick="display(gorgon)">Górgona Impiedosa</a>. Em seu custo, além da mana genérica, temos duas manas híbridas, que podem ser pagas com qualquer combinação de mana preta e verde (duas verdes, duas pretas ou uma de cada).</p>
                     <p>Algumas cartas apresentam em seu custo de mana um X. Isso indica que, na hora de conjurar a mágica, seu controlador define um valor para X, que influenciará em algum efeito da carta. Por exemplo, ao conjurar a <a class="display" href="javascript:void(0)" onclick="display(krasis)">Krasis Hidroide</a>, seu controlador deve pagar uma mana azul, uma verde e mais X genéricas. Esse valor definirá a quantidade de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Marcador +1/+1" data-content="<p>Marcadores +1/+1 são fichas que são colocadas em criaturas por diversos efeitos e aumentam seu poder e resistência em 1.</p><p>Uma criatura 0/0 que entre no campo com 4 marcadores +1/+1 será uma 4/4.</p>">marcadores +1/+1</a> que terá, além de fazer com que o jogador compre cartas e ganhe vida.</p>
-					<h2>Atacando e Bloqueando</h2>
+                    </section>
+					<section>
+                    <h2>Atacando e Bloqueando</h2>
 					<p>Durante seu turno, você pode atacar criaturas que controla, exceto aquelas que estão com <a>enjoo de conjuração</a>. Para fazer isso, você declara quais criaturas vão atacar, e vira elas.</p>
 					<p>Depois de você declarar seus ataques, seu oponente declara os bloqueadores. Apenas criaturas desviradas podem bloquear.</p>
 					<p>Uma criatura atacante e uma bloqueadora causam, uma à outra, uma quantidade de dano equivalente ao seu poder. Caso o dano levado seja igual ou maior que a resistência, a criatura morre. As criaturas não bloqueadas causam dano diretamente aos pontos de vida do jogador.</p>
 					<p>Quando uma criatura morre, ela é retirada do campo de batalha e colocada no <a>cemitério</a>.</p>
+                    </section>
                 </article>
             </div>
         </main>
 
 
-        <!-- -------------------- Modal -------------------- -->
+        <!--  Modal  -->
         
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -186,7 +200,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>
@@ -194,7 +208,7 @@
         </div>
 
 
-        <!-- -------------------- Bottom Bar -------------------- -->
+        <!--  Bottom Bar  -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">

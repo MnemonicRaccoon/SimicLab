@@ -28,12 +28,12 @@
     <body>
         <script src="../script.js"></script>
 
-        <!-- ---------- Background ---------- -->
+        <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/bond_of_revival.jpg)">
 
 
-            <!-- -------------------- Navbar -------------------- -->   
+            <!--  Navbar  -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -110,12 +110,12 @@
             </nav>
 
 
-            <!-- -------------------- Title -------------------- -->
+            <!--  Title  -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
-                    <a href="#main" tabindex="1">
-                        <h1 class="text-center" id="title">Feitiços</h1>
+                    <a class="text-center" id="title">
+                        Feitiços
                     </a>
 
 
@@ -135,7 +135,7 @@
 
         <main class="container" id="main">
 
-            <!-- -------------------- Sidebar -------------------- -->
+            <!--  Sidebar  -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
@@ -146,22 +146,27 @@
                 </div>
 
 
-                <!-- ------------------ Article ------------------ -->
+                <!--  Article  -->
 
-                <article class="col-md-8">
+                <article class="col-md-8" id="content">
+                    <h1>Feitiços</h1>
+                    <section>
                     <h2>Permanentes</h2>
                     <p>Na lição anterior, vimos as criaturas, que são conjuradas da mão do jogador e permanecem no campo de batalha até que elas morram. Cartas desse tipo são chamadas de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Permanentes" data-content='<p>Muitas vezes, algum efeito se refere a uma permanente ("destrua a permanente alvo", por exemplo). Nesses casos, permanentes são apenas as cartas que já estão no campo de batalha.</p>'>permanentes</a>. Terrenos também são um tipo de permanente.</p>
                     <p>Ora, você deve estar imaginando que se é necessário criar a categoria de <em>permanentes</em>, existem também <em>não permanentes</em>. Você está certa(o). Nessa lição, vamos ver os feitiços, que possuem um efeito imediato e logo são colocados no cemitério.</p>
+                    </section>
+                    <section>
                     <h2>Quando usar</h2>
                     <p>Os feitiços possuem uma grande variedade de efeitos. Eles podem aplicar dano a uma criatura ou jogador, comprar cartas, alterar momentaneamente o poder e a resistência de uma ou mais criaturas e até mesmo destruir criaturas.</p>
                     <p>Como seu efeito é pontual, é importante pensar no momento certo de usar um feitiço. Provavelmente é bom esperar para conjurar o <a class="display" href="javascript:void(0)" onclick="display(jovem)">Jovem para Sempre</a> quando você tiver pelo menos uma criatura importante no cemitério. Se você usar uma <a class="display" href="javascript:void(0)" onclick="display(ira)">Ira de Kaya</a>, por que não atacar com suas criaturas antes, já que elas vão morrer?</p>
+                    </section>
                     
                 </article>
             </div>
         </main>
 
 
-        <!-- -------------------- Modal -------------------- -->
+        <!--  Modal  -->
         
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -175,7 +180,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="" id="modal-img">
                     </div>
 
                 </div>
@@ -183,7 +188,7 @@
         </div>
 
 
-        <!-- -------------------- Bottom Bar -------------------- -->
+        <!--  Bottom Bar  -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">

@@ -148,8 +148,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -157,10 +162,58 @@
                 <!--  Article  -->
 
                 <article class="col-md-8" id="content">
-                    <h2>Tipos</h2>
-                    <p>Até o momento, já falamos sobre quatro tipos de cartas: terrenos, criaturas, </p>
-                    <h2>Efeitos Duradouros</h2>
-                    <h2>Auras</h2>
+                    <section>
+                        <h1>Cores</h1>
+                        <p>Como já vimos, em Magic existem cinco cores de mana diferentes. Cada uma das mágicas é ou incolor ou de uma combinação de uma ou mais cores. Cada uma cas cores possui uma visão de mundo, sendo representada por uma série de crenças e princípios. Esses aspectos refletem nas cartas de cada cor e como cada uma se relaciona com as outras.</p>
+                        <p>No <a class="display" href="javascript:void(0)" onclick="display(card_back)">verso de uma carta de Magic</a> temos um círculo com as cinco cores. Elas não estão dispostas dessa maneira por acaso. Cada cor tem duas <em>aliadas</em> e duas <em>inimigas</em>. As cores aliadas são as adjacentes, e as inimigas são as opostas. Cores aliadas possuem crenças semelhantes, compartilhando de algumas visões de mundo. Cores inimigas possuem crenças conflituosas entre si.</p>
+                        <p>É importante conhecer um pouco de cada cor para saber o que podemos esperar do deck do oponente e planejar melhor suas ações.</p>
+                    </section>
+
+                    <section>
+                        <h2>Branco</h2>
+                        <p>O Branco acredita na coletividade, na comunidade. Seu objetivo principal é a paz, e ele acredita que para chegar nela precisamos de ordem, moralidade e igualdade. O Branco defende a Lei, que deve ser seguida por todos os indivíduos em prol do bem comum.</p>
+                        <p>No jogo, o Branco está associado a estratégias <em>go wide</em>, fazendo várias criaturas, nenhuma delas particularmente forte. Cartas como <a class="display" href="javascript:void(0)" onclick="display(formation)">Formação Inquebrável</a> recompensam essas estratégias.</p>
+                        <p>As remoções brancas podem envolver impedir a criatura de atacar ou bloquear, como <a class="display" href="javascript:void(0)" onclick="display(pacifismo)">Pacifismo</a>, ou exilar a permanente alvo, como <a class="display" href="javascript:void(0)" onclick="display(tribunal)">Tribunal do Conclave</a>. Muitas cartas brancas buscam um equilíbrio no campo de batalha, como <a class="display" href="javascript:void(0)" onclick="display(cleansing)">Limpeza Planar</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>Azul</h2>
+                        <p>O Azul é a cor do estudo, do conhecimento. Seu objetivo principal é a perfeição. Diferente do Branco, o Azul acredita que a individualidade é importante para a evolução de cada um, e que a igualdade absiluta impede o crescimento de cada um.</p>
+                        <p>No jogo, o conhecimento do Azul está ligado ao acesso a uma variedade maior de mágicas, existindo muitos efeitos de comprar cartas, como a <a class="display" href="javascript:void(0)" onclick="display(insight)">Visão da Quimiomante</a>.</p>
+                        <p>O Azul tende a ser uma cor reativa, que responde às ações do oponente. É conhecido por suas anulações (como <a class="display" href="javascript:void(0)" onclick="display(negar)">Negar</a>) e efeitos de devolver cartas à mão do dono (como <a class="display" href="javascript:void(0)" onclick="display(run_away)">Fugir Juntos</a>).</p>
+                        <p>O conhecimento do Azul também está representado por cartas como <a class="display" href="javascript:void(0)" onclick="display(manipulation)">Manipulação em Massa</a>, que tomam controle de permanentes do oponente, e <a class="display" href="javascript:void(0)" onclick="display(quasiduplicate)">Quasiduplicata</a>, que copiam outras permanentes.</p>
+                    </section>
+
+                    <section>
+                        <h2>Preto</h2>
+                        <p>O Preto é a cor que não acredita em moralidade. Seu objetivo principal é o poder. Para ele, os fins justificam os meios. Assim como o Azul, é individualista e quer o melhor para si próprio, mas diferente dos outros o Preto não se importa de seguir estratégias que podem ser vistas como proibidas ou tabu.</p>
+                        <p>É um erro comum imaginar Branco como bom e Preto como mau. Nenhuma das cores é boa ou má por si só.</p>
+                        <p>No jogo, existem muitas mágicas pretas que destroem criaturas, como <a class="display" href="javascript:void(0)" onclick="display(murder)">Homicídio</a>. Além de destruir criaturas, o Preto também é conhecido por interagir com o cemitério, como o <a class="display" href="javascript:void(0)" onclick="display(coveiro)">Coveiro</a>, que recupera uma criatura do próprio cemitério, ou o <a class="display" href="javascript:void(0)" onclick="display(esqueleto)">Esqueleto Remontado</a>, que pode voltar para o campo de batalha do cemitério.</p>
+                        <p>O Preto está disposto a fazer tudo o que é possível para alcançar suas metas, e isso inclui auto sacrifícios. Por isso, é comum que habilidades e mágicas pretas envolvam custos de perder vida, sacrificar criaturas e descartar cartas. O <a class="display" href="javascript:void(0)" onclick="display(altar)">Altar Ensanguentado</a>, por exemplo, exige essas três coisas para que seja ativado.</p>
+                    </section>
+
+                    <section>
+                        <h2>Vermelho</h2>
+                        <p>O Vermelho é a cor da paixão. Valoriza, acima de tudo, a sua liberdade. É uma cor impulsiva, que age sem pensar.</p>
+                        <p>O Vermelho não quer se limitar pela ordem e pelas leis do Branco, e não se interessa pela disciplina do Azul.</p>
+                        <p>Enquanto o Azul é reativo, o Vermelho é ativo, em geral seguindo estratégias agressivas que tentam ganhar o jogo nos primeiros turnos usando criaturas baratas, muitas vezes com ímpeto, como o <a class="display" href="javascript:void(0)" onclick="display(spitter)">Cuspidor Chamuscante</a> e a <a class="display" href="javascript:void(0)" onclick="display(dodger)">Esquivadora da Rua do Estanho</a>.</p>
+                        <p>Possui, também, muitas cartas que causam dano direto a criaturas, planeswalkers e jogadores, como o <a class="display" href="javascript:void(0)" onclick="display(choque)">Choque</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>Verde</h2>
+                        <p>Verde é a cor da natureza. Ele não quer mudar o mundo, acredita que devemos aceitá-lo como ele é. Acredita na interdependência dos diferentes aspectos da natureza, e busca coexistir pacificamente com todos eles.</p>
+                        <p>A paz do Verde é diferente da paz do Branco. Ele não acredita que deve criar leis e que todos devam ser iguais. Na natureza, alguns animais são mais fortes do que outros, existem predadores e presas, e está tudo bem.</p>
+                        <p>No jogo, o verde é mais conhecido por suas criaturas fortes, como o <a class="display" href="javascript:void(0)" onclick="display(gigantossauro)">Gigantossauro</a> e o <a class="display" href="javascript:void(0)" onclick="display(mamute)">Mamute Agressivo</a></p>
+                        <p>O verde também é uma cor com muitas cartas de <em>ramp</em>, como a <a class="display" href="javascript:void(0)" onclick="display(druida)">Druida do Paraíso</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>Combinações</h2>
+                        <p>Tanto cartas do jogo quanto personagens da <em>lore</em> muitas vezes são de mais de uma cor. Isso acontece porque todos </p>
+                        <p>Aqui, no <strong>LabSimic</strong>, somos verdes e azuis. Verdes porque acreditamos na natureza e nos instintos de cada um. Azuis porque acreditamos que todos têm o potencial de se tornar cada vez melhores. E, acima de tudo, nós podemos evoluir sem mudar a essência de quem somos.</p>
+                    </section>
+
                 </article>
             </div>
         </main>
@@ -180,7 +233,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="/display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

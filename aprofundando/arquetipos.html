@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Language" content="pt-br">
 
         <meta name="viewport" content="width=device-width">
-        <title>SimicLab - Primeiros Passos</title>
+        <title>SimicLab - Pilha</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -27,12 +27,17 @@
     <body>
         <script src="../script.js"></script>
 
-        <!-- Background -->
+        <!--  Background  -->
 
-        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/leyline_of_abundance.jpg)">
+        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/cogwork_librarian.jpg)">
 
 
-            <!-- Navbar -->   
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
+
+            <!--  Navbar  -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -109,12 +114,12 @@
             </nav>
 
 
-            <!-- Title -->
+            <!--  Title  -->
 
             <div class="container section">
                 <div class="text-center" id="section-box">
-                    <a class="text-center" id="title">
-                        Encantamentos
+                    <a href="#content" class="text-center" id="title">
+                        Arquétipos
                     </a>
 
 
@@ -138,46 +143,61 @@
 
         <main class="container" id="main">
 
-            <!-- Sidebar -->
+            <!--  Sidebar  -->
 
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <!-- Article -->
+                <!--  Article  -->
 
                 <article class="col-md-8" id="content">
-                    <h1>Encantamentos</h1>
+                    <h1>Arquétipos</h1>
                     <section>
-                        <h2>Relembrando</h2>
-                        <p>Até o momento, já falamos sobre quatro tipos de cartas: terrenos, criaturas, feitiços e mágicas instantâneas. Cada um desses tipos tem suas particularidades e usos. Agora, vamos ver os três tipos de cartas que faltaram. Todos eles são de permanentes.</p>
-                        <p>O primeiro tipo de carta que vamos ver aqui são os encantamentos.</p>
+                        <p>Na última sessão, falamos sobre como montar um deck. Uma das coisas mais importantes que vimos é que, durante o processo, devemos ter em mente o que queremos que aquele deck faça.</p>
+                        <p>Embora exista uma infinidade de possibilidades de decks, é possível enquadrar a maioria deles em quatro arquétipos. Conhecer esses arquétipos é importante tanto no processo de montar o próprio deck quanto na tomada de decisões durante uma partida, tendo em mente o tipo de estratégia que o oponente parece estar seguindo.</p>
                     </section>
                     <section>
-                        <h2>Efeitos Duradouros</h2>
-                        <p>Encantamentos são mágicas que permanecem no campo de batalha alterando o jogo de alguma forma. Vamos ver alguns exemplos: </p>
-                        <ul>
-                            <li><a class="display" href="javascript:void(0)" onclick="display(fires)">Fogos da Invanção</a>: Permite que você conjure mágicas sem pagar o custo de mana delas.</li>
-                            <li><a class="display" href="javascript:void(0)" onclick="display(guardian)">Projeto Guardião </a>: Faz com que você compre uma carta quando uma criatura entra em campo, desde que não haja uma igual a ela já em campo ou no cemitério.</li>
-                            <li><a class="display" href="javascript:void(0)" onclick="display(leyline)">Linha de Força da Antecipação</a>: Faz com que todas as suas mágicas tenham lampejo.</li>
-                        </ul>
+                        <h2>Aggro</h2>
+                        <p>Decks <em>aggro</em> são focados em vencer o jogo rápido. Para isso, eles utilizam criaturas de baixo custo que consigam aplicar bastante dano nos primeiros turnos.</p>
+                        <p>Muitos jogadores consideram os decks <em>aggro</em> fáceis de jogar, mas não se engane, muitas vezes decidir o alvo de um <a class="display" href="javascript:void(0)" onclick="display(choque)">Choque</a> para maximizar seu dano pode ser tão difícil quanto decidir anular ou não uma mágica.</p>
                     </section>
                     <section>
-                        <h2>Auras</h2>
-                        <p>As auras são um tipo específico de encantamentos. Ao invés de afetar o jogo inteiro, elas encantam apenas um alvo. Em geral, uma criatura, mas podendo também ser um terreno ou um jogador.</p>
-                        <p>As auras podem tanto ser usadas em suas próprias criaturas, como <a class="display" href="javascript:void(0)" onclick="display(carvalho)">Carvalhoforme</a>, que aumenta o poder e resistência da criatura, quanto em criaturas do oponente, como <a class="display" href="javascript:void(0)" onclick="display(pacifismo)">Pacifismo</a>, que a impede de atacar ou bloquear.</p>
+                        <h2>Control</h2>
+                        <p>Os decks <em>control</em> são focados em responder as ameaças do oponente. Costumam utilizar muitas anulações e remoções. Eventualmente possuem efeitos de descarte.</p>
+                        <p>O objetivo de um deck <em>control</em> é controlar o campo de batalha e limitar os recursos do oponente. Quando o jogo estiver controlado, usa sua <em>win condition</em>, em geral uma carta poderosa de custo alto que consegue ganhar o jogo em poucos tunos.</p>
                     </section>
+                    <section>
+                        <h2>Midrange</h2>
+                        <p>Um deck <em>midrange</em> junta aspectos de <em>aggro</em> e <em>control</em>. Seu objetivo é seguir em uma linha oposta à do oponente. Caso esteja jogando contra um <em>aggro</em>, tenta responder às ameaças do oponente para depois jogar criaturas um pouco mais fortes. Se estiver jogando contra um <em>control</em>, tenta usar suas criaturas para vencer o jogo antes que o oponente consiga controlá-lo.</p>
+                        <p>Como o <em>midrange</em> é uma espécie de mistura, ele nunca vai ser melhor do que um <em>control</em> em controlar o jogo ou melhor que um <em>aggro</em> em dar dano rápido. Por isso, é importante que aproveite sua flexibilidade para se adaptar a cada contexto.</p>
+                    </section>
+                    <section>
+                        <h2>Combo</h2>
+                        <p>Um deck combo é focado em alguma interação específica entre duas ou mais cartas que é capaz de ganhar o jogo sozinha.</p>
+                        <p>Um deck combo precisa de maneiras de se proteger de decks <em>aggro</em>, para não perder o jogo antes que consiga combar, e de formas de facilitar que as peças do combo sejam combinadas.</p>
+                    </section>
+
+                    <h2>Tipos</h2>
+                    <p>Até o momento, já falamos sobre quatro tipos de cartas: terrenos, criaturas, </p>
+                    <h2>Efeitos Duradouros</h2>
+                    <h2>Auras</h2>
                 </article>
             </div>
         </main>
 
 
-        <!-- Modal -->
+        <!--  Modal  -->
 
         <div class="modal" id="myModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -185,13 +205,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>
@@ -199,12 +219,12 @@
         </div>
 
 
-        <!-- Bottom Bar -->
+        <!--  Bottom Bar  -->
 
         <nav class="container" id="bottom-bar">
             <div class="row">
                 <div class ="col-md-4 text-left bottom-btn" id="left-bottom">
-                    <a class="bottom-link" href="../explorando.html">Anterior</a>
+                    <a class="bottom-link" href="./habilidades.html">Anterior</a>
                 </div>
                 <div class="col-sm text-center bottom-btn" id="home">
                     <a class="bottom-link" href="../index.html">Home</a>
@@ -213,7 +233,7 @@
                     <a class="bottom-link" href="../indice.html" >Índice</a>
                 </div>
                 <div class ="col-md-4 text-right bottom-btn" id="right-bottom">
-                    <a class="bottom-link" href="./artefatos.html">Próximo</a>
+                    <a class="bottom-link" href="../aprofundando.html">Próximo</a>
                 </div>
             </div>
         </nav>

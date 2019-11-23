@@ -1,4 +1,10 @@
 // Terrenos
+var card_back = {
+    "title":"",
+    "img": "../display/card_back.jpg",
+    "alt": "Verso de uma carta de Magic."
+}
+
 var plains = {
     "title": "Planície",
 	"img": "../display/plains.png",
@@ -142,7 +148,7 @@ var pacifismo = {
 
 var medalhao = {
     "title":"Medalhão Dimir",
-    "img": "../display/pacifismo.jpg",
+    "img": "../display/medalhao.jpg",
     "alt": "Artefato, vire para gerar uma mana preta ou azul."
 }
 
@@ -230,6 +236,105 @@ var aguia = {
     "alt": "Águia Empírea."
 }
 
+var niv = {
+    "title":"Niv-Mizzet, Parun",
+    "img": "../display/niv.jpg",
+    "alt": "Niv-Mizzet, Parun."
+}
+
+var aguia = {
+    "title":"Chefe de Guerra da Legião",
+    "img": "../display/warboss.jpg",
+    "alt": "Chefe de Guerra da Legião."
+}
+
+var druida = {
+    "title":"Druida do Paraíso",
+    "img": "../display/druida.jpg",
+    "alt": "Druida do Paraíso."
+}
+
+var formation = {
+    "title":"Formação Inquebrável",
+    "img": "../display/formation.jpg",
+    "alt": "Formação Inquebrável."
+}
+
+var cleansing = {
+    "title":"Limpeza Planar",
+    "img": "../display/cleansing.jpg",
+    "alt": "Destrua todas as permanentes que não sejam terrenos."
+}
+
+var tribunal = {
+    "title":"Tribunal do Conclave",
+    "img": "../display/tribunal.jpg",
+    "alt": "Exile a permanente alvo."
+}
+
+var insight = {
+    "title":"Visão da Quimiomante",
+    "img": "../display/insight.jpg",
+    "alt": "Compre duas cartas. Recarregar."
+}
+
+var negar = {
+    "title":"Negar",
+    "img": "../display/negar.jpg",
+    "alt": "Anule a mágica alvo que não seja de criatura."
+}
+
+var run_away = {
+    "title":"Fugir Juntos",
+    "img": "../display/run_away.jpg",
+    "alt": "Escolha duas criaturas controladas por jogadores diferentes. Devolva aquelas criaturas para as mãos de seus donos."
+}
+
+var manipulation = {
+    "title":"Manipulação em Massa",
+    "img": "../display/manipulation.jpg",
+    "alt": "Ganhe controle de X criaturas e/ou planeswalkes alvo."
+}
+
+var quasiduplicate = {
+    "title":"Quasiduplicata",
+    "img": "../display/quasiduplicate.jpg",
+    "alt": "Crie uma ficha que seja uma cópia da criatura alvo que você controla."
+}
+
+var esqueleto = {
+    "title":"Esqueleto Remontado",
+    "img": "../display/esqueleto.jpg",
+    "alt": "Esqueleto Remontado."
+}
+
+var coveiro = {
+    "title":"Coveiro",
+    "img": "../display/coveiro.jpg",
+    "alt": "Coveiro."
+}
+
+var dodger = {
+    "title":"Esquivadora da Rua do Estanho",
+    "img": "../display/dodger.jpg",
+    "alt": "Esquivadora da Rua do Estanho."
+}
+
+var spitter = {
+    "title":"Cuspidor Chamuscante",
+    "img": "../display/spitter.jpg",
+    "alt": "Cuspidor Chamuscante."
+}
+
+var mamute = {
+    "title":"Mamute Agressivo",
+    "img": "../display/mamute.jpg",
+    "alt": "Mamute Agressivo."
+}
+
+
+
+
 
 
 
@@ -241,13 +346,25 @@ function display(x) {
     if ($(window).width()<=768) {
         $('#myModal').modal('show');
     };
+	$("#side-title").html(x.title);
 	$("#side-img").attr("src", "");
-	$("#modal-img").attr("src", "");
 	$("#side-img").attr("src", x.img);
 	$("#side-img").attr("alt", x.alt);
+    $("#turn").css("display", "inline-block");
+    
 	$("#modal-title").html(x.title);
+	$("#modal-img").attr("src", "");
     $("#modal-img").attr("src", x.img);
+    $("#modal-img").attr("alt", x.alt);
 };
+
+function turn() {
+    $("#side-title").html(card_back.title);
+	$("#side-img").attr("src", "");
+	$("#side-img").attr("src", card_back.img);
+	$("#side-img").attr("alt", card_back.alt);
+    $("#turn").hide();
+}
 
 
 // Hero
