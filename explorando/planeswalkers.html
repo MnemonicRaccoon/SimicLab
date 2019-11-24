@@ -30,6 +30,12 @@
         <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/mu_yanling.jpg)">
+            
+            
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
 
 
             <!--  Navbar  -->   
@@ -139,8 +145,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -149,7 +160,7 @@
 
                 <article class="col-md-8">
                     <h2>Tipos</h2>
-                    <p>Chegou a hora de conhecermos o último tipo de permanente: os <em>Planeswalkers</em>. Na <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Lore" data-content="<p>A <i>lore</i> de Magic é toda a mitologia dos mundos em que o jogo se passa. Além das referências nas próprias cartas, você pode conhecer mais sobre ela lendo os livros e artigos na página da Wizards of the Coast.</p>">lore</a> de Magic: the Gathering, os planeswalkers (ou planinautas) são magos capazes de viajar entre os planos do Multiverso.</p>
+                    <p>Chegou a hora de conhecermos o último tipo de permanente: os <em>Planeswalkers</em>. Na <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Lore" data-content="<p>A <em>lore</em> de Magic é toda a mitologia dos mundos em que o jogo se passa. Além das referências nas próprias cartas, você pode conhecer mais sobre ela lendo os livros e artigos na página da Wizards of the Coast.</p>">lore</a> de Magic: the Gathering, os planeswalkers (ou planinautas) são magos capazes de viajar entre os planos do Multiverso.</p>
 					<p>Os planeswalkers possuem uma mecânica bastante diferente das outras permatentes. Eles entram no campo com uma quantidade de marcadores de lealdade indicada na parte inferior direita da carta. A lealdade é análoga aos pontos de vida de um jogador. Na sua fase de combate, você pode decidir se cada uma das criaturas atacantes vai estar atacando o oponente ou um planeswalker que ele controla. Qualquer dano aplicado a um planeswalker causa a retirada daquela quantidade de marcadores de lealdade. Se a lealdade chega a zero, o planeswalker é colocado no cemitério.</p>
                     <h2>Habilidades de Lealdade</h2>
 					<p>Cada planeswalker possui uma série de habilidades de lealdade. Cada uma delas possui um custo, que afeta a lealdade daquele planeswalker. Durante uma de suas fases principais, você pode utilizar uma dessas habilidades. Habilidades com custo positivo aumentam a lealdade, e com custo negativo diminuem. Uma habilidade de custo negativo só ode ser ativada se o planeswalker possuir marcadores lealdade o suficiente. É comum que exista uma habilidade com custo alto e grande impacto no jogo, muitas vezes levando o jogador à vitória. Depois de ativada uma habilidade de lealdade, um planeswalker só pode ter uma habilidade ativada no turno seguinte.</p>
@@ -170,13 +181,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

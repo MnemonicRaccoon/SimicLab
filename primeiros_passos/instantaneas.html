@@ -30,6 +30,12 @@
         <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/tyrants_scorn.jpg)">
+            
+            
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
 
 
             <!--  Navbar  -->   
@@ -143,8 +149,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -171,7 +182,7 @@
                     <section>
                         <h2>Lampejo</h2>
                         <p>Uma das primeiras coisas que aprendemos é que, quando uma carta e uma regra entram em conflito, prevalece o texto da carta. Vamos ver agora um desses casos.</p>
-                        <p>Normalmente, só podemos conjurar criaturas em nossas fases principais. No entanto, uma criatura que tenha em seu texto a palavra-chave <em>lampejo</em> (<i>flash</i>, em inglês) pode ser conjurada em qualquer momento que você poderia conjurar uma mágica instantânea.</p>
+                        <p>Normalmente, só podemos conjurar criaturas em nossas fases principais. No entanto, uma criatura que tenha em seu texto a palavra-chave <em>lampejo</em> (<em>flash</em>, em inglês) pode ser conjurada em qualquer momento que você poderia conjurar uma mágica instantânea.</p>
                         <p>Criaturas com lampejo nos abrem uma nova janela de possibilidades. Você estava em dúvida se queria conjurar uma criatura no seu turno ou guardar a mana para <a class="display" href="javascript:void(0)" onclick="display(opt)">Optar</a> no fim do turno de seu oponente? Se a criatura for um <a class="display" href="javascript:void(0)" onclick="display(sailor)">Marinheiro Espectral</a>, você pode esperar o oponente fazer sua jogada e decidir o que é melhor.</p>
                         <p>Você também pode usar criaturas com flash para emboscar um atacante de seu oponente.</p><p>Depois de seu oponente ter declarado os atacantes, e antes de você declarar seus bloqueadores, pode conjurar o <a class="display" href="javascript:void(0)" onclick="display(emboscador)">Emboscador da Matilha Noturna</a> e bloquear com ele.</p>
                     </section>
@@ -188,13 +199,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

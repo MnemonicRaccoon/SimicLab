@@ -30,6 +30,12 @@
         <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/blighted_fen.jpg)">
+            
+            
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
 
 
             <!--  Navbar  -->   
@@ -124,7 +130,7 @@
                     <hr/>
 
                     <blockquote class="blockquote text-right">
-                        <p class="quote"><i>“O que é o mana senão o possível, uma ideia à qual ainda não se deu forma?”</i> — Jhoira, mestre artífice</p>
+                        <p class="quote"><em>“O que é o mana senão o possível, uma ideia à qual ainda não se deu forma?”</em> — Jhoira, mestre artífice</p>
                         <footer class="blockquote-footer" id="quote">Pedra da Mente</footer>
                     </blockquote>
                 </div>
@@ -142,8 +148,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -156,7 +167,7 @@
                         <h2>Gerando Mana</h2>
                         <p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Mana" data-content="<p>No Multiverso de Magic, mana é a energia que serve de combustível para as mágicas conjuradas. Ela flui pelas linhas de força de cada plano, mantendo sua existência.</p><p>Em uma partida de Magic, o mana das cinco diferentes cores, além do mana incolor, são utilizados para conjurar magias e ativar habilidades. Em geral, magias e habilidades mais poderosas possuem um custo de mana mais elevado.</p>">mana</a>.</p>
                         <p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
-                        <p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Virar" data-content="<p>As cartas no campo de batalha podem estar em duas posições: viradas ou desviradas. Ao virar uma carta, ela é rotacionada em 90 graus, indicando que ela foi utilizada.</p><p>É comum o uso da expressão em inglês <i>tap</i>. Se um jogador disser que ele está <em>tapado</em>, significa que todos os seus terrenos estão virados.</p>">virados</a> para gerar mana da cor correspondente.</p>
+                        <p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Virar" data-content="<p>As cartas no campo de batalha podem estar em duas posições: viradas ou desviradas. Ao virar uma carta, ela é rotacionada em 90 graus, indicando que ela foi utilizada.</p><p>É comum o uso da expressão em inglês <em>tap</em>. Se um jogador disser que ele está <em>tapado</em>, significa que todos os seus terrenos estão virados.</p>">virados</a> para gerar mana da cor correspondente.</p>
                     </section>
                     <section>
                         <h2>Terrenos básicos</h2>
@@ -183,13 +194,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

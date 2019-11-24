@@ -31,6 +31,12 @@
         <!--  Background  -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/gishath.jpg)">
+            
+            
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
 
 
             <!--  Navbar  -->   
@@ -145,8 +151,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -166,7 +177,7 @@
 					<p>Podemos identificar que a carta acima é uma criatura pelo texto logo abaixo da ilustração. O tipo da carta é criatura e, no caso, o subtipo é Ave Espírito.</p>
 					<p>No canto inferior direito temos o PODER e a RESISTÊNCIA da criatura. O poder indica a quantidade de dano que ela atribui no combate, e a resistência mostra a quantidade de dano necessária para matar ela.</p>
 					<p>Como vimos na lição anterior, cada mágica precisa de mana para ser conjurada. O CUSTO DE MANA está indicado no canto superior direito da carta. No custo de mana, podemos ter indicação de mana de cada uma das cinco cores ou de mana genérica (que pode ser pago com qualquer cor). A Águia Empírea precisa de uma mana branco, uma azul e uma genérica para ser conjurada. Nos exemplos abaixo, o custo de mana de <a class="display" href="javascript:void(0)" onclick="display(krenko)">Krenko, Chefão da Rua do Estanho</a> é de uma vermelha e duas genéricas e do <a class="display" href="javascript:void(0)" onclick="display(gigantossauro)">Gigantossauro</a> é cinco verdes.</p>
-                    <p>Abaixo da linha de tipo, temos um texto que indica as habilidades da carta. Vamos discutir melhor essas habilidades em uma próxima lição. O texto abaixo, em itálico, é o <i>flavor</i>. Ele não afeta a jogabilidade, mas nos dá vislumbres dos mundos de Magic.</p>
+                    <p>Abaixo da linha de tipo, temos um texto que indica as habilidades da carta. Vamos discutir melhor essas habilidades em uma próxima lição. O texto abaixo, em itálico, é o <em>flavor</em>. Ele não afeta a jogabilidade, mas nos dá vislumbres dos mundos de Magic.</p>
                     </section>
                     <section>
                     <h2>Mana híbrida e custos X</h2>
@@ -194,13 +205,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

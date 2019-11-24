@@ -30,6 +30,12 @@
         <!-- Background -->
 
         <div class="jumbotron jubotron-fluid" style="background-image: url(../background/spinning_wheel.jpg)">
+            
+            
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
 
 
             <!-- Navbar -->   
@@ -143,8 +149,13 @@
             <div class="row">
                 <div class="col-md-4" id="sidebar">
                     <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)"id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -163,7 +174,7 @@
                     <section>
                         <h2>Pedras de Mana</h2>
                         <p>Uma função comum dos artefatos é gerar mana. Conhecidos como <em>pedras de mana</em>, esses artefatos, assim como os terrenos, podem ser virados para gerar mana.</p>
-                        <p>As pedras de mana são um jeito de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Ramp" data-content="<p><i>Ramp</i>, ou acelerar, é uma estratégia usada em alguns decks que querem poder conjurar mágicas de custo alto mais cedo.</p><p>O uso de pedras de mana é uma das formas de <i>ramp</i>, que também pode ser feito com criaturas que geram mana ou com efeitos que permitem colocar mais de um terreno no campo durante o turno.</p>"><i>rampar</i></a>, permitindo que mágicas de custo mais alto possam ser jogadas mais cedo.</p>
+                        <p>As pedras de mana são um jeito de <a class="word-pop" href="javascript:void(0)" data-toggle="popover" title="Ramp" data-content="<p><em>Ramp</em>, ou acelerar, é uma estratégia usada em alguns decks que querem poder conjurar mágicas de custo alto mais cedo.</p><p>O uso de pedras de mana é uma das formas de <em>ramp</em>, que também pode ser feito com criaturas que geram mana ou com efeitos que permitem colocar mais de um terreno no campo durante o turno.</p>"><em>rampar</em></a>, permitindo que mágicas de custo mais alto possam ser jogadas mais cedo.</p>
                         <p>Como os artefatos não possuem enjoo de conjuração, como as criaturas, eles podem ser ativados no turno em que entram. Dessa maneira, no seu terceito turno, você pode pagar três manas para conjurar um <a class="display" href="javascript:void(0)" onclick="display(medalhao)">Medalhão Dimir</a> e no mesmo turno usá-lo para gerar uma mana azul e <a class="display" href="javascript:void(0)" onclick="display(opt)">Optar</a>.</p>
                         <h2>Equipamentos</h2>
                         <p>Os equipamentos em geral representam armas, que podem alterar o poder e a resistência de uma criatura (mas também outras características).</p>
@@ -187,13 +198,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
                     </div>
 
                 </div>

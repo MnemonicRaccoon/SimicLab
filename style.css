@@ -42,17 +42,23 @@ body {
     min-height: 100vh;
 }
 
+.chapter {
+    margin: 20vh 20vw 0 20vw;
+    width: 60vw;
+    padding: 5px
+}
 @media screen and (max-width: 900px) {
     .intro {
+
         margin: 5vh 10vw 0 10vw;
         width: 80vw;
     }
-}
 
-.chapter {
-    margin: 20vh 15vw 0 15vw;
-    width: 70vw;
-    padding: 5px
+    .chapter {
+        margin: 10vh 15vw 0 15vw;
+        width: 70vw;
+        padding: 5px
+    }
 }
 
 
