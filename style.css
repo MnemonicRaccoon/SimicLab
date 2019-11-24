@@ -318,7 +318,7 @@ hr {
 #bottom-bar {
     border-top: 2px solid gray;
     text-decoration: none;
-    color: #777;
+    color: #666;
     font-size: 18px;
     height: 60px;
 }
@@ -367,27 +367,6 @@ hr {
     #sidebar {
         display: none;
     }
-}
-
-@media screen and (max-width: 768px) and (min-width: 576px) {
-    #home {
-        border-left: 0px solid gray;
-        border-right: 1px solid gray;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-    }
-
-    #indice {
-        border-left: 0px solid gray;
-        border-right: 0px solid gray;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-    }
-
-    .bottom-link {
-        height: 40px;
-    }
-
 }
 
 @media screen and (max-width: 576px) {
