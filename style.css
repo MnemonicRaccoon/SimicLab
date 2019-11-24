@@ -49,6 +49,12 @@ body {
     }
 }
 
+.chapter {
+    margin: 20vh 15vw 0 15vw;
+    width: 70vw;
+    padding: 5px
+}
+
 
 /* Navbar */
 .navbar {
@@ -124,7 +130,7 @@ header {
 
 .section {
     margin-top: 50vh;
-    
+
 }
 
 #section-box {
@@ -376,7 +382,7 @@ hr {
     .section {
         margin-top: 30vh;
     }
-    
+
     #home {
         border-left: 0px solid gray;
         border-right: 0px solid gray;
@@ -390,15 +396,15 @@ hr {
         border-top: 0px solid gray;
         border-bottom: 1px solid gray;
     }
-    
+
     .bottom-link {
         height: 40px;
     }
-    
+
     #left-bottom {
         padding-left: 10vw;
     }
-    
+
     #right-bottom {
         padding-right: 10vw;
     }

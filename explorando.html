@@ -1,132 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>AdP - Primeiros Passos</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" />
-		
-  </head>
-  <body>
-    <script src="/script.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="pt-br">
 
-		<header style="background-image: url(/background/blighted_fen.jpg)">
-			
-				<nav class="navbar">
+        <meta name="viewport" content="width=device-width">
+        <title>SimicLab - Pilha</title>
 
-  			<a class="home" href="/index.html">Academia de Planinautas</a>
-  			
-				<div class="dropdown">
-    			<button class="dropbtn" href="/primeiros_passos.html">Primeiros Passos 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/primeiros_passos/terrenos.html">Terrenos</a>
-      			<a href="/primeiros_passos/criaturas.html">Criaturas</a>
-      			<a href="/primeiros_passos/turno.html">Turno</a>
-      			<a href="/primeiros_passos/combate.html">Combate</a>
-      			<a href="/primeiros_passos/feiticos.html">Feitiços</a>
-      			<a href="/primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
-    			</div>
-  			</div>
-				
-				<div class="dropdown">
-    			<button class="dropbtn" href="/explorando.html">Explorando 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/explorando/zonas.html">Zonas</a>
-      			<a href="/explorando/pilha.html">Pilha</a>
-      			<a href="/explorando/permanentes.html">Permanentes</a>
-      			<a href="/explorando/encantamentos.html">Encantamentos</a>
-      			<a href="/explorando/planinautas.html">Planinautas</a>
-      			<a href="/explorando/artefatos.html">Artefatos</a>
-      			<a href="/explorando/habilidades.html">Habilidades</a>
-    			</div>
-				</div>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-				<div class="dropdown">
-    			<button class="dropbtn" href="/aprofundando.html">Aprofundando 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/aprofundando/cores.html">Cores</a>
-      			<a href="/aprofundando/formatos.html">Formatos</a>
-      			<a href="/aprofundando/deckbuilding.html">Deckbuilding</a>
-    			</div>
-				</div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-				<div class="dropdown">
-    			<button class="dropbtn" href="/estrategia.html">Estratégia 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/estrategia/arquetipos.html">Arquétipos</a>
-      			<a href="/estrategia/interacoes_pilha.html">Interações na Pilha</a>
-      			<a href="/estrategia/vantagem.html">Vantagem de Cartas</a>
-      			<a href="/estrategia/tempo.html">Tempo</a>
-    			</div>
-				</div>
-				
-				<div class="dropdown">
-    			<button class="dropbtn">Mais 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/mais/glossario.html">Glossário</a>
-      			<a href="/mais/imagens.html">Imagens</a>
-      			<a href="/mais/links.html">Links Externos</a>
-    			</div>
-  			</div> 
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-			</nav>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-			<a id="section-container" href="#main">
-				<div>
-					<h1 id="section-title">Explorando</h1>
-				</div>
-			</a>
-		</header>
+        <!-- My CSS -->
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <script src="./script.js"></script>
+
+        <!--  Background  -->
+
+        <div class="jumbotron jubotron-fluid" id="jumbo-index" style="background-image: url(./background/venerable_knight.jpg)">
 
 
-			<main id="main">
-				<div id="sidebar">
-					<div id="side-content">
-						<img id="side-img" src="" alt="">
-						<p id="side-txt"></p>
-					</div>
+            <!--  Navbar  -->   
 
-				</div>
+            <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
+                <a class="navbar-brand" href="../index.html">SimicLab</a>
 
-				<article>
-					<p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <span class="display" onclick="display(mana)">mana</span>.</p>
-					<p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
-					<p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <span class="display" onclick="display(virar)">virados</span> para gerar mana da cor correspondente.</p>
-					<p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
-					<ul>
-						<li> Branco: <span class="display" onclick="display(plains)">Planície</span></li>
-						<li> Azul: <span class="display" onclick="display(island)">Ilha</span></li>
-						<li> Preto: <span class="display" onclick="display(swamp)">Pântano</span></li>
-						<li> Vermelho: <span class="display" onclick="display(mountain)">Montanha</span></li>
-						<li> Verde: <span class="display" onclick="display(forest)">Floresta</span></li>
-					</ul>
-					<p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
-				</article>
-			</main>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                Primeiros Passos
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="./primeiros_passos/terrenos.html">Terrenos</a>
+                                <a class="dropdown-item" href="./primeiros_passos/criaturas.html">Criaturas</a>
+                                <a class="dropdown-item" href="./primeiros_passos/turno.html">Turno</a>
+                                <a class="dropdown-item" href="./primeiros_passos/feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="./primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                                Explorando
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./explorando/encantamentos.html">Encantamentos</a>
+                                <a class="dropdown-item" href="./explorando/artefatos.html">Artefatos</a>
+                                <a class="dropdown-item" href="./explorando/planeswalkers.html">Planeswalkers</a>
+                                <a class="dropdown-item" href="./explorando/habilidades.html">Habilidades</a>
+                                <a class="dropdown-item" href="./explorando/pilha.html">Pilha</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                                Aprofundando
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="./aprofundando/cores.html">Cores</a>
+                                <a class="dropdown-item" href="./aprofundando/deckbuilding.html">Formatos</a>
+                                <a class="dropdown-item" href="./aprofundando/arquetipos.html">Deckbuilding</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop4" data-toggle="dropdown">
+                                Estratégia
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="./estrategia/interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="./estrategia/vantagem.html">Vantagem de Cartas</a>
+                                <a class="dropdown-item" href="./estrategia/tempo.html">Tempo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop5" data-toggle="dropdown">
+                                Mais
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="./mais/glossario.html">Glossário</a>
+                                <a class="dropdown-item" href="./mais/sobre.html">Sobre</a>
+                            </div>
+                        </li>
 
 
-			<div id="bottom-bar">
-				<div class ="side" id="left-bottom">
-					<a class="bottom-link" href="/primeiros_passos/instantaneas.html">Anterior</a>
-				</div>
-				<div class="center">
-					<a class="bottom-link" href="/index.html">Home</a>
-				</div>
-				<div class="center">
-					<a class="bottom-link" href="/indice.html">Índice</a>
-				</div>
-				<div class ="side" id="right-bottom">
-					<a class="bottom-link" href="/explorando/zonas.html">Próximo</a>
-				</div>
-			</div>
+                    </ul>
+
+                </div>
+            </nav>
 
 
+            <!--  Title  -->
+            <main>
+                <div class="chapter">
+                    <div id="intro-box">
+                        <h1 class="text-center" id="intro-title">
+                            Primeiros Passos
+                        </h1>
+                        <div id="welcome">
+                            <p>
+                                Sejam todos muito bem vindos!
+                            </p>
+                            <p>
+                                Somos um laboratório de estudos de Magic: the Gathering, um jogo de cartas colecionáveis criado por Richard Garfield em 1993.
+                            </p>
+                            <p>
+                                Nosso objetivo é poder ajudar todos os jogadores, desde iniciantes até veteranos, a conhecer melhor o jogo e suas possibilidades, evoluindo cada vez mais.
+                            </p>
+                            <p>
+                                Se você já sabe jogar, pode encontrar a sessão que te interesse mais no menu acima.
+                            </p>
+                            <div class="text-right cta">
+                                <a href="./explorando/encantamentos.html">
+                                    Começar!
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
 
 
-  </body>
+    </body>
 </html>

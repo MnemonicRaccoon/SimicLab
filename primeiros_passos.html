@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Language" content="pt-br">
 
         <meta name="viewport" content="width=device-width">
-        <title>SimicLab - Primeiros Passos</title>
+        <title>SimicLab - Pilha</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,19 +20,19 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <!-- My CSS -->
-        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <link href="./style.css" rel="stylesheet" type="text/css" />
 
     </head>
 
     <body>
-        <script src="../script.js"></script>
+        <script src="./script.js"></script>
 
-        <!-- ---------- Background ---------- -->
+        <!--  Background  -->
 
-        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/venerable_knight.jpg)">
+        <div class="jumbotron jubotron-fluid" id="jumbo-index" style="background-image: url(./background/venerable_knight.jpg)">
 
 
-            <!-- -------------------- Navbar -------------------- -->   
+            <!--  Navbar  -->   
 
             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
                 <a class="navbar-brand" href="../index.html">SimicLab</a>
@@ -48,11 +48,11 @@
                                 Primeiros Passos
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="./terrenos.html">Terrenos</a>
-                                <a class="dropdown-item" href="./criaturas.html">Criaturas</a>
-                                <a class="dropdown-item" href="./turno.html">Turno</a>
-                                <a class="dropdown-item" href="./feiticos.html">Feitiços</a>
-                                <a class="dropdown-item" href="./instantaneas.html">Mágicas Instantâneas</a>
+                                <a class="dropdown-item" href="./primeiros_passos/terrenos.html">Terrenos</a>
+                                <a class="dropdown-item" href="./primeiros_passos/criaturas.html">Criaturas</a>
+                                <a class="dropdown-item" href="./primeiros_passos/turno.html">Turno</a>
+                                <a class="dropdown-item" href="./primeiros_passos/feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="./primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
                             </div>
                         </li>
 
@@ -60,13 +60,12 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
                                 Explorando
                             </a>
-                            <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="../explorando/zonas.html">Zonas</a>
-                                <a class="dropdown-item" href="../explorando/encantamentos.html">Encantamentos</a>
-                                <a class="dropdown-item" href="../explorando/artefatos.html">Artefatos</a>
-                                <a class="dropdown-item" href="../explorando/planeswalkers.html">Planeswalkers</a>
-                                <a class="dropdown-item" href="../explorando/habilidades.html">Habilidades</a>
-                                <a class="dropdown-item" href="../explorando/pilha.html">Pilha</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./explorando/encantamentos.html">Encantamentos</a>
+                                <a class="dropdown-item" href="./explorando/artefatos.html">Artefatos</a>
+                                <a class="dropdown-item" href="./explorando/planeswalkers.html">Planeswalkers</a>
+                                <a class="dropdown-item" href="./explorando/habilidades.html">Habilidades</a>
+                                <a class="dropdown-item" href="./explorando/pilha.html">Pilha</a>
                             </div>
                         </li>
 
@@ -75,9 +74,9 @@
                                 Aprofundando
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="../aprofundando/cores.html">Cores</a>
-                                <a class="dropdown-item" href="../aprofundando/cores.html">Formatos</a>
-                                <a class="dropdown-item" href="../aprofundando/cores.html">Deckbuilding</a>
+                                <a class="dropdown-item" href="./aprofundando/cores.html">Cores</a>
+                                <a class="dropdown-item" href="./aprofundando/deckbuilding.html">Formatos</a>
+                                <a class="dropdown-item" href="./aprofundando/arquetipos.html">Deckbuilding</a>
                             </div>
                         </li>
 
@@ -86,9 +85,9 @@
                                 Estratégia
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="../estrategia/interacoes_pilha.html">Interações na Pilha</a>
-                                <a class="dropdown-item" href="../estrategia/vantagem.html">Vantagem de Cartas</a>
-                                <a class="dropdown-item" href="../estrategia/tempo.html">Tempo</a>
+                                <a class="dropdown-item" href="./estrategia/interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="./estrategia/vantagem.html">Vantagem de Cartas</a>
+                                <a class="dropdown-item" href="./estrategia/tempo.html">Tempo</a>
                             </div>
                         </li>
 
@@ -97,8 +96,8 @@
                                 Mais
                             </a>
                             <div class="dropdown-menu">  
-                                <a class="dropdown-item" href="../mais/glossario.html">Glossário</a>
-                                <a class="dropdown-item" href="../mais/sobre.html">Sobre</a>
+                                <a class="dropdown-item" href="./mais/glossario.html">Glossário</a>
+                                <a class="dropdown-item" href="./mais/sobre.html">Sobre</a>
                             </div>
                         </li>
 
@@ -109,106 +108,38 @@
             </nav>
 
 
-            <!-- -------------------- Title -------------------- -->
+            <!--  Title  -->
+            <main>
+                <div class="chapter">
+                    <div id="intro-box">
+                        <h1 class="text-center" id="intro-title">
+                            Primeiros Passos
+                        </h1>
+                        <div id="welcome">
+                            <p>
+                                Sejam todos muito bem vindos!
+                            </p>
+                            <p>
+                                Somos um laboratório de estudos de Magic: the Gathering, um jogo de cartas colecionáveis criado por Richard Garfield em 1993.
+                            </p>
+                            <p>
+                                Nosso objetivo é poder ajudar todos os jogadores, desde iniciantes até veteranos, a conhecer melhor o jogo e suas possibilidades, evoluindo cada vez mais.
+                            </p>
+                            <p>
+                                Se você já sabe jogar, pode encontrar a sessão que te interesse mais no menu acima.
+                            </p>
+                            <div class="text-right cta">
+                                <a href="./primeiros_passos/terrenos.html">
+                                    Começar!
+                                </a>
+                            </div>
+                        </div>
 
-            <div class="container section">
-                <div class="text-center" id="section-box">
-                    <a href="#main" tabindex="1">
-                        <h1 class="text-center" id="title">Primeiros Passos</h1>
-                    </a>
-
-
-                    <hr/>
-
-                    <blockquote class="blockquote text-right">
-                        <p class="quote">A natureza é essencialmente selvagem, em todas as suas formas.</p>
-                        <footer class="blockquote-footer" id="quote">Encarnação Feral</footer>
-                    </blockquote>
+                    </div>
                 </div>
-            </div>
 
+            </main>
         </div>
-
-
-
-
-        <main class="container" id="main">
-
-            <!-- -------------------- Sidebar -------------------- -->
-
-            <div class="row">
-                <div class="col-md-4" id="sidebar">
-                    <div class="card sticky-top">
-                        <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="">
-                        <div class="card-footer"><p id="side-txt"></p></div>
-                    </div>
-                </div>
-
-
-                <!-- ------------------ Article ------------------ -->
-
-                <article class="col-md-8">
-                    <p>Nas lições anteriores, mencionamos algumas ações que podem ser realizadas no seu turno. Agora, vamos explicar melhor o que é esse turno, e como ele é organizado.</p>
-					<p>Cada jogador tem seu turno, no qual pode realizar ações. Quando o turno do jogador termina, imediatamente começa o do oponente (ou, no caso de jogos multiplayer, o do próximo jogador). Não há um momento entre dois turnos.</p>
-					<p>Os turnos são divididos em cinco fases, cada uma delas permitindo certas ações.</p>
-					<h2>Fase inicial</h2>
-					<p>A primeira ação do seu turno é desvirar todas as cartas do campo de batalha que estavam <a>viradas</a>. Depois disso, efeitos de cartas no campo de batalha que digam "no começo do turno" acontecem. Por fim, você compra a carta do topo do seu grimório e vai para a próxima fase.</p>
-					<p>Ser o primeiro a jogar é um fator que normalmente dá uma vantagem. Para compensar isso, no primeiro turno do primeiro jogador, ele não compra uma carta.</p>
-					<h2>Fase Principal (pré combate)</h2>
-					<p>Durante a fase principal, o jogador pode colocar até um terreno de sua mão no campo de batalha, e pode usar mana para conjurar mágicas de criatura e feitiços. Não há limite para a quantidade de mágicas conjuradas, desde que o jogador consiga gerar a mana necessária.</p>
-					<h2>Fase de Combate</h2>
-					<p>O combate foi descrito em detalhes na lição de <a>criaturas</a>. Para relembrar a ordem: o jogador atacante declara os atacantes, o defensor declara os bloqueadores, o atacante decide a ordem que o dano será dado, no caso de multiplos bloqueadores em uma única criatura, e por fim o dano é dado, simultaneamente. As criaturas que morrerem são colocadas no cemitério.</p>
-					<h2>Fase Principal (pós combate)</h2>
-					<p>Após o combate, há uma segunda fase principal. Caso o jogador não tenha colocado um terreno no campo de batalha nesse turno, ele pode fazer isso. Muitas vezes, é interessante conjurar as mágicas apenas na fase pós combate, para que o oponente decida os bloqueadores tendo menos informações sobre suas cartas.</p>
-					<h2>Fase Final</h2>
-					<p>Na última fase do turno, caso o jogador tenha mais de sete cartas na mão ele deve descartar até chegar a sete. </p>
-                </article>
-            </div>
-        </main>
-
-
-        <!-- -------------------- Modal -------------------- -->
-        
-        <div class="modal" id="myModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="modal-title">Carta</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <img src="../display/card_back.jpg" alt="" id="modal-img">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- -------------------- Bottom Bar -------------------- -->
-
-        <nav class="container" id="bottom-bar">
-            <div class="row">
-                <div class ="col-md-4 text-left bottom-btn" id="left-bottom">
-                    <a class="bottom-link" href="">Anterior</a>
-                </div>
-                <div class="col-sm text-center bottom-btn" id="home">
-                    <a class="bottom-link" href="../index.html">Home</a>
-                </div>
-                <div class="col-sm text-center bottom-btn" id="indice">
-                    <a class="bottom-link" href="../indice.html" >Índice</a>
-                </div>
-                <div class ="col-md-4 text-right bottom-btn" id="right-bottom">
-                    <a class="bottom-link" href="./terrenos.html">Próximo</a>
-                </div>
-            </div>
-        </nav>
-
-
 
 
     </body>
