@@ -1,135 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>AdP - Primeiros Passos</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" />
-		
-  </head>
-  <body>
-    <script src="/script.js"></script>
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Explicação de tempo em Magic.">
+         
 
-		<header style="background-image: url(/background/sages_reverie.jpg)">
-			
-				<nav class="navbar">
+        <meta name="viewport" content="width=device-width">
+        <title>SimicLab - Vantagem</title>
 
-  			<a class="home" href="/index.html">Academia de Planinautas</a>
-  			
-				<div class="dropdown">
-    			<button class="dropbtn" href="/primeiros_passos.html">Primeiros Passos 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/primeiros_passos/terrenos.html">Terrenos</a>
-      			<a href="/primeiros_passos/criaturas.html">Criaturas</a>
-      			<a href="/primeiros_passos/turno.html">Turno</a>
-      			<a href="/primeiros_passos/combate.html">Combate</a>
-      			<a href="/primeiros_passos/feiticos.html">Feitiços</a>
-      			<a href="/primeiros_passos/instantaneas.html">Mágicas Instantâneas</a>
-    			</div>
-  			</div>
-				
-				<div class="dropdown">
-    			<button class="dropbtn" href="/explorando.html">Explorando 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/explorando/zonas.html">Zonas</a>
-      			<a href="/explorando/pilha.html">Pilha</a>
-      			<a href="/explorando/permanentes.html">Permanentes</a>
-      			<a href="/explorando/encantamentos.html">Encantamentos</a>
-      			<a href="/explorando/planinautas.html">Planinautas</a>
-      			<a href="/explorando/artefatos.html">Artefatos</a>
-      			<a href="/explorando/habilidades.html">Habilidades</a>
-    			</div>
-				</div>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-				<div class="dropdown">
-    			<button class="dropbtn" href="/aprofundando.html">Aprofundando 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/aprofundando/cores.html">Cores</a>
-      			<a href="/aprofundando/formatos.html">Formatos</a>
-      			<a href="/aprofundando/deckbuilding.html">Deckbuilding</a>
-    			</div>
-				</div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-				<div class="dropdown">
-    			<button class="dropbtn" href="/estrategia.html">Estratégia 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/estrategia/arquetipos.html">Arquétipos</a>
-      			<a href="/estrategia/interacoes_pilha.html">Interações na Pilha</a>
-      			<a href="/estrategia/vantagem.html">Vantagem de Cartas</a>
-      			<a href="/estrategia/tempo.html">Tempo</a>
-    			</div>
-				</div>
-				
-				<div class="dropdown">
-    			<button class="dropbtn">Mais 
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="/mais/glossario.html">Glossário</a>
-      			<a href="/mais/imagens.html">Imagens</a>
-      			<a href="/mais/links.html">Links Externos</a>
-    			</div>
-  			</div> 
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-			</nav>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-			<a href="#main">
-				<div id="section-container">
-                    <div id="section-box">
-					   <h1 id="section-title">Tempo</h1>
-					   <p id="section-subtitle">Nfln gsindg sgldngs dglsg slgk sdglksng sdlgsdgln</p>
+        <!-- My CSS -->
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <script src="../script.js"></script>
+
+        <!--  Background  -->
+
+        <div class="jumbotron jubotron-fluid" style="background-image: url(../background/cogwork_librarian.jpg)">
+
+
+            <!-- Main content -->
+            <a class="skippy sr-only sr-only-focusable" href="#content">
+                <span class="skippy-text">Pular para conteúdo principal</span>
+            </a>
+
+            <!--  Navbar  -->   
+
+             <nav class="navbar navbar-expand-sm flex-md-row flex-sm-column">
+                <a class="navbar-brand" href="../index.html" title="Home">
+                    <img src="../logo.png" class="logo" alt="SimicLab" width="35">
+                    SimicLab
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                Primeiros Passos
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../primeiros_passos.html">Introdução</a>
+                                <a class="dropdown-item" href="../primeiros_passos/terrenos.html">Terrenos</a>
+                                <a class="dropdown-item" href="../primeiros_passos/criaturas.html">Criaturas</a>
+                                <a class="dropdown-item" href="../primeiros_passos/turno.html">Turno</a>
+                                <a class="dropdown-item" href="../primeiros_passos/feiticos.html">Feitiços</a>
+                                <a class="dropdown-item" href="../primeiros_passos/instantaneas.html">Instantâneas</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                                Explorando
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../explorando.html">Introdução</a>
+                                <a class="dropdown-item" href="../explorando/encantamentos.html">Encantamentos</a>
+                                <a class="dropdown-item" href="../explorando/artefatos.html">Artefatos</a>
+                                <a class="dropdown-item" href="../explorando/planeswalkers.html">Planeswalkers</a>
+                                <a class="dropdown-item" href="../explorando/habilidades.html">Habilidades</a>
+                                <a class="dropdown-item" href="../explorando/pilha.html">Pilha</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                                Aprofundando
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../aprofundando.html">Introdução</a>
+                                <a class="dropdown-item" href="./cores.html">Cores</a>
+                                <a class="dropdown-item" href="./deckbuilding.html">Deckbuilding</a>
+                                <a class="dropdown-item" href="./arquetipos.html">Arquétipos</a>
+                            </div>
+                        </li>
+<!-- estr
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop4" data-toggle="dropdown">
+                                Estratégia
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../estrategia.html">Introdução</a>
+                                <a class="dropdown-item" href="./interacoes_pilha.html">Interações na Pilha</a>
+                                <a class="dropdown-item" href="./vantagem.html">Vantagem de Cartas</a>
+                                <a class="dropdown-item" href="./tempo.html">Tempo</a>
+                            </div>
+                        </li>
+estr -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop5" data-toggle="dropdown">
+                                Mais
+                            </a>
+                            <div class="dropdown-menu">  
+                                <a class="dropdown-item" href="../mais/onde_jogar.html">Onde Jogar</a>
+                                <a class="dropdown-item" href="../mais/sobre.html">Sobre</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+
+
+            <!--  Title  -->
+
+            <div class="container section">
+                <div class="text-center" id="section-box">
+                    <a href="#content" class="text-center" id="title">
+                        Tempo
+                    </a>
+
+
+                    <hr/>
+
+                    <blockquote class="blockquote text-right">
+                        <p class="quote">
+                            “Nossa melhor esperança contra os Eternos serão táticas que eles nunca viram e estilos em que jamais treinaram.”
+                        </p>
+                        <footer class="blockquote-footer" id="quote">
+                            Espreitadora dos Juncos Aviana
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <main class="container" id="main">
+
+            <!--  Sidebar  -->
+
+            <div class="row">
+                <div class="col-md-4" id="sidebar">
+                    <div class="card sticky-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-right" id="side-title"></h2>
+                            <img class="card-img-top" id="side-img" src="../display/card_back.jpg" alt="Verso de uma carta de Magic.">
+                            <div class="card-footer">
+                                <a href="javascript:void(0)" id="turn" onclick="turn()">Virar</a>
+                            </div>
+                        </div>
                     </div>
-				</div>
-			</a>
-		</header>
+                </div>
 
 
-			<main id="main">
-				<div id="sidebar">
-					<div id="side-content">
-						<img id="side-img" src="" alt="">
-						<p id="side-txt"></p>
-					</div>
+                <!--  Article  -->
 
-				</div>
-
-				<article>
-					<p>Uma partida de Magic simula uma batalha entre dois magos poderosos que conjuram mágicas para tentar derrotar um ao outro. No entanto, não podemos conjurar uma mágica fortíssima sem mais nem menos: precisamos de <span class="display" onclick="display(mana)">mana</span>.</p>
-					<p>O jeito mais comum de gerar mana é com as cartas do tipo TERRENO.</p>
-					<p>Em seu turno, o jogador tem o direito de jogar no campo de batalha um terreno de sua mão. Os terrenos podem ser <span class="display" onclick="display(virar)">virados</span> para gerar mana da cor correspondente.</p>
-					<p>Para cada uma das cinco cores em Magic existe um terreno básico que gera aquela cor de mana e pode possuir qualquer quantidade de cópias em um deck:</p>
-					<ul>
-						<li> Branco: <span class="display" onclick="display(plains)">Planície</span></li>
-						<li> Azul: <span class="display" onclick="display(island)">Ilha</span></li>
-						<li> Preto: <span class="display" onclick="display(swamp)">Pântano</span></li>
-						<li> Vermelho: <span class="display" onclick="display(mountain)">Montanha</span></li>
-						<li> Verde: <span class="display" onclick="display(forest)">Floresta</span></li>
-					</ul>
-					<p>Existem muitos terrenos além dos terrenos básicos. Alguns deles permitem que você escolha uma entre duas cores de mana para gerar, quando for virado. Outros têm efeitos ao entrar no campo de batalha, ou até mesmo se transformam em criaturas. Veja alguns exemplos antes de seguir para a próxima lição.</p>
-				</article>
-			</main>
-
-
-			<div id="bottom-bar">
-				<div class ="side" id="left-bottom">
-					<a class="bottom-link" href="/estrategia/vantagem.html">Anterior</a>
-				</div>
-				<div class="center">
-					<a class="bottom-link" href="/index.html">Home</a>
-				</div>
-				<div class="center">
-					<a class="bottom-link" href="/indice.html">Índice</a>
-				</div>
-				<div class ="side" id="right-bottom">
-					<a class="bottom-link" href="/final.html">Próximo</a>
-				</div>
-			</div>
+                <article class="col-md-8" id="content">
+                    <h1>Arquétipos</h1>
+                    <section>
+                        <p>Na última sessão, falamos sobre como montar um deck. Uma das coisas mais importantes que vimos é que, durante o processo, devemos ter em mente o que queremos que aquele deck faça.</p>
+                        <p>Embora exista uma infinidade de possibilidades de decks, é possível enquadrar a maioria deles em quatro arquétipos. Conhecer esses arquétipos é importante tanto no processo de montar o próprio deck quanto na tomada de decisões durante uma partida, tendo em mente o tipo de estratégia que o oponente parece estar seguindo.</p>
+                    </section>
+                    <section>
+                        <h2>Aggro</h2>
+                        <p>Decks <em>aggro</em> são focados em vencer o jogo rápido. Para isso, eles utilizam criaturas de baixo custo que consigam aplicar bastante dano nos primeiros turnos.</p>
+                        <p>Muitos jogadores consideram os decks <em>aggro</em> fáceis de jogar, mas não se engane, muitas vezes decidir o alvo de um <a class="display" href="javascript:void(0)" onclick="display(choque)">Choque</a> para maximizar seu dano pode ser tão difícil quanto decidir anular ou não uma mágica.</p>
+                    </section>
+                    <section>
+                        <h2>Control</h2>
+                        <p>Os decks <em>control</em> são focados em responder as ameaças do oponente. Costumam utilizar muitas anulações e remoções. Eventualmente possuem efeitos de descarte.</p>
+                        <p>O objetivo de um deck <em>control</em> é controlar o campo de batalha e limitar os recursos do oponente. Quando o jogo estiver controlado, usa sua <em>win condition</em>, em geral uma carta poderosa de custo alto que consegue ganhar o jogo em poucos tunos.</p>
+                    </section>
+                    <section>
+                        <h2>Midrange</h2>
+                        <p>Um deck <em>midrange</em> junta aspectos de <em>aggro</em> e <em>control</em>. Seu objetivo é seguir em uma linha oposta à do oponente. Caso esteja jogando contra um <em>aggro</em>, tenta responder às ameaças do oponente para depois jogar criaturas um pouco mais fortes. Se estiver jogando contra um <em>control</em>, tenta usar suas criaturas para vencer o jogo antes que o oponente consiga controlá-lo.</p>
+                        <p>Como o <em>midrange</em> é uma espécie de mistura, ele nunca vai ser melhor do que um <em>control</em> em controlar o jogo ou melhor que um <em>aggro</em> em dar dano rápido. Por isso, é importante que aproveite sua flexibilidade para se adaptar a cada contexto.</p>
+                    </section>
+                    <section>
+                        <h2>Combo</h2>
+                        <p>Um deck combo é focado em alguma interação específica entre duas ou mais cartas que é capaz de ganhar o jogo sozinha.</p>
+                        <p>Um deck combo precisa de maneiras de se proteger de decks <em>aggro</em>, para não perder o jogo antes que consiga combar, e de formas de facilitar que as peças do combo sejam combinadas.</p>
+                    </section>
+                </article>
+            </div>
+        </main>
 
 
+        <!--  Modal  -->
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modal-title">Carta</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="../display/card_back.jpg" alt="Verso de uma carta de Magic." id="modal-img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
-  </body>
+        <!--  Bottom Bar  -->
+
+        <nav class="container" id="bottom-bar">
+            <div class="row">
+                <div class ="col-sm-5 text-left bottom-btn" id="left-bottom">
+                    <a class="bottom-link" href="./deckbuilding.html">Anterior</a>
+                </div>
+                <div class="col-sm-2 text-center bottom-btn" id="home">
+                    <a class="bottom-link" href="../index.html">Home</a>
+                </div>
+                <div class ="col-sm-5 text-right bottom-btn" id="right-bottom">
+                    <a class="bottom-link" href="./fim.html">Próximo</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </body>
 </html>
